@@ -1,0 +1,25 @@
+{
+  "name": "el_trebol_de_villa_luro",
+  "version": "1.0.0",
+  "description": "Proyecto Final de Desarrollo Web de Coderhouse. El Trébol es un Resto Bar y el fin del sitio web es sobre información del mismo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimarcor/Proyecto-Final-Coderhouse-Desarrollo-Web.git"
+  },
+  "author": "Rodrigo Alejandro Di Marco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimarcor/Proyecto-Final-Coderhouse-Desarrollo-Web/issues"
+  },
+  "homepage": "https://github.com/dimarcor/Proyecto-Final-Coderhouse-Desarrollo-Web#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
