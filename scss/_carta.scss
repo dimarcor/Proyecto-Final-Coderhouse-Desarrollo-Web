@@ -1,0 +1,72 @@
+#carta {
+    width: 100%;
+    padding: 1em;
+    background: url('../multimedia/patterncarta.png');
+    .carta-info {
+        width: 100%;
+        padding-top: 4em;
+        margin-bottom: 2em;
+        text-align: center;
+        h1 {
+            font-size: 2.3rem;
+            margin-bottom: .2em;
+        }
+        p {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
+    h2 {
+        margin-bottom: 1em;
+        text-align: center;
+        font-size: 2rem;
+        color: $lightgreen;
+    }
+    .foods {
+        display: flex;
+            flex-flow: column;
+            justify-content: center;
+        width:80%;
+        margin:0 auto;
+        .img {
+            display: flex;
+                justify-content: space-between;
+                align-items: center;
+            border-radius: .8em;
+            margin-bottom: 3em;
+            background: #fff;
+            box-shadow: 10px 10px 25px -14px rgba(0,0,0,0.75);
+            img {
+                width: 50%;
+                border-top-left-radius: .8em;
+                border-bottom-left-radius: .8em;
+            }
+            .food-info {
+                width: 50%;
+                p {
+                    margin-bottom: .5em;
+                    padding: 0 .1em;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    text-align: center;
+                    line-height: 1.1em;
+                }
+                .price {
+                    margin: none;
+                    padding: none;
+                    font-weight: 700;
+                    color: $darkgreen
+                }
+            }
+        }
+    }
+    .specials-container {
+        .special {
+            margin-top: -1.5em;
+            margin-bottom: 3em;
+            text-align: center;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+    }
+}

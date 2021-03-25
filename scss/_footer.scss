@@ -1,0 +1,28 @@
+footer {
+    display: flex;
+        flex-flow: column;
+        align-items: center;
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    background: $lightblack;
+    .info {
+        h5 {
+            margin-bottom: 1em;
+            font-size: 1rem;
+            color: $lightgreen;
+        }
+        p {
+            margin-bottom: 1em;
+            color: $whitecustom;
+        }
+    }
+    .social {
+        display: flex;
+            justify-content: space-around;
+        width: 100%;
+        a {
+            color: $lightgold;
+        }
+    }
+}

@@ -1,0 +1,944 @@
+@keyframes promo-new {
+  0% {
+    color: red; }
+  50% {
+    color: green; }
+  100% {
+    color: blue; } }
+
+@keyframes red_social {
+  0% {
+    transform: rotate(0turn); }
+  100% {
+    transform: rotate(1turn); } }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none; }
+
+html {
+  font-size: 16px; }
+
+body {
+  font-family: 'Poppins', sans-serif; }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #007200;
+  z-index: 1;
+  box-shadow: 0px -32px 39px 46px rgba(0, 0, 0, 0.52); }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; }
+    header nav .logo-container {
+      display: flex;
+      align-items: center;
+      padding-left: 1em; }
+      header nav .logo-container .logo {
+        display: none; }
+      header nav .logo-container .logo-name {
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 2rem;
+        letter-spacing: .2rem;
+        color: #f1f1f1; }
+    header nav #check {
+      display: none; }
+      header nav #check:checked ~ .nav-list {
+        height: 100vh; }
+        header nav #check:checked ~ .nav-list li {
+          visibility: visible; }
+    header nav .hamburger-btn {
+      display: block;
+      padding-right: .5em;
+      font-size: 2.4rem;
+      color: #f1f1f1;
+      line-height: 4rem;
+      cursor: pointer; }
+    header nav .nav-list {
+      position: absolute;
+      width: 100%;
+      height: 0vh;
+      top: 64px;
+      background: #202020;
+      text-align: center;
+      transition: all .5s; }
+      header nav .nav-list li {
+        visibility: hidden;
+        line-height: 1.8rem;
+        margin: 3em 0; }
+        header nav .nav-list li a {
+          color: #f1f1f1;
+          font-size: 1.2rem;
+          text-transform: uppercase;
+          text-decoration: none; }
+    header nav .navbtn-container {
+      display: none; }
+      header nav .navbtn-container .nav-btn {
+        display: none;
+        text-decoration: none; }
+
+main {
+  width: 100%;
+  background: #f1f1f1; }
+  main .local {
+    padding-top: 5em;
+    background: url(../multimedia/local.jpg) no-repeat center #525252;
+    background-blend-mode: multiply;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center; }
+    main .local .main-info {
+      display: flex;
+      flex-flow: column;
+      text-align: center;
+      width: 90%;
+      margin: 0 auto; }
+      main .local .main-info h1 {
+        display: flex;
+        flex-flow: column;
+        margin-bottom: .4em;
+        font-size: 2.8rem;
+        line-height: 1em;
+        color: #70e000; }
+      main .local .main-info p {
+        font-weight: 600;
+        color: #f1f1f1; }
+    main .local .wpp {
+      width: 80%;
+      margin: 0 auto;
+      padding-top: 3em; }
+      main .local .wpp a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: .7em 1em;
+        text-decoration: none;
+        background-color: #007200;
+        color: #f1f1f1;
+        border-radius: 1em; }
+        main .local .wpp a img {
+          width: 2.5em;
+          height: 2.5em; }
+  main .daymenu {
+    padding: 1em; }
+    main .daymenu .daymenu-info {
+      display: flex;
+      flex-flow: column;
+      align-items: center; }
+      main .daymenu .daymenu-info h2 {
+        margin-bottom: .3em;
+        font-size: 2.1rem; }
+      main .daymenu .daymenu-info p {
+        margin-bottom: 2em;
+        font-size: .95rem;
+        font-weight: 500;
+        text-align: center; }
+        main .daymenu .daymenu-info p span {
+          font-weight: bold;
+          color: #007200; }
+    main .daymenu .daymenu-img .img {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+      width: 100%;
+      margin-bottom: 3em;
+      border-radius: 1em;
+      box-shadow: 0px 10px 66px 0px rgba(0, 0, 0, 0.41); }
+      main .daymenu .daymenu-img .img img {
+        width: 100%;
+        border-top-left-radius: .8em;
+        border-top-right-radius: .8em; }
+      main .daymenu .daymenu-img .img p {
+        display: flex;
+        flex-flow: column;
+        padding: 1em 0;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.2rem;
+        color: #000; }
+
+footer {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+  padding: 1em;
+  text-align: center;
+  background: #202020; }
+  footer .info h5 {
+    margin-bottom: 1em;
+    font-size: 1rem;
+    color: #70e000; }
+  footer .info p {
+    margin-bottom: 1em;
+    color: #f1f1f1; }
+  footer .social {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; }
+    footer .social a {
+      color: #DDA15E; }
+
+#carta {
+  width: 100%;
+  padding: 1em;
+  background: url("../multimedia/patterncarta.png"); }
+  #carta .carta-info {
+    width: 100%;
+    padding-top: 4em;
+    margin-bottom: 2em;
+    text-align: center; }
+    #carta .carta-info h1 {
+      font-size: 2.3rem;
+      margin-bottom: .2em; }
+    #carta .carta-info p {
+      font-size: 1rem;
+      font-weight: 500; }
+  #carta h2 {
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 2rem;
+    color: #70e000; }
+  #carta .foods {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto; }
+    #carta .foods .img {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: .8em;
+      margin-bottom: 3em;
+      background: #fff;
+      box-shadow: 10px 10px 25px -14px rgba(0, 0, 0, 0.75); }
+      #carta .foods .img img {
+        width: 50%;
+        border-top-left-radius: .8em;
+        border-bottom-left-radius: .8em; }
+      #carta .foods .img .food-info {
+        width: 50%; }
+        #carta .foods .img .food-info p {
+          margin-bottom: .5em;
+          padding: 0 .1em;
+          font-size: 1.2rem;
+          font-weight: 500;
+          text-align: center;
+          line-height: 1.1em; }
+        #carta .foods .img .food-info .price {
+          margin: none;
+          padding: none;
+          font-weight: 700;
+          color: #007200; }
+  #carta .specials-container .special {
+    margin-top: -1.5em;
+    margin-bottom: 3em;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.1rem; }
+
+#delivery {
+  width: 100%;
+  padding: 1em; }
+  #delivery .title-container {
+    width: 100%; }
+  #delivery .soon {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-top: 4em;
+    margin-bottom: 3em; }
+    #delivery .soon h1 {
+      margin-bottom: 1em;
+      text-align: center;
+      font-size: 2rem; }
+    #delivery .soon img {
+      width: 80%;
+      border-radius: 1em; }
+  #delivery .now {
+    width: 100%; }
+    #delivery .now p {
+      text-align: center;
+      font-size: 1.6rem;
+      color: #202020; }
+    #delivery .now .wpp-delivery a {
+      font-size: 0.9rem; }
+    #delivery .now .wpp-delivery p {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: .7em 1em;
+      margin: 1em 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+      background-color: #70e000;
+      color: #000;
+      border-radius: 1em; }
+      #delivery .now .wpp-delivery p img {
+        width: 2.2em;
+        height: 2.2em; }
+  #delivery .business-hours {
+    width: 100%;
+    margin: 2em 0;
+    padding: .5em;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; }
+    #delivery .business-hours .title-hours {
+      width: 90%;
+      display: flex;
+      place-items: center;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+      #delivery .business-hours .title-hours img {
+        width: 2em;
+        height: 2em; }
+      #delivery .business-hours .title-hours h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: .5em; }
+    #delivery .business-hours p {
+      margin: 1em 0; }
+      #delivery .business-hours p:last-of-type {
+        margin: 0; }
+
+#promociones {
+  padding-bottom: 1em; }
+  #promociones img {
+    width: 100%; }
+  #promociones .promo-image {
+    width: 100%;
+    padding-top: 52px;
+    margin-bottom: 1em; }
+    #promociones .promo-image img {
+      object-fit: cover; }
+    #promociones .promo-image #carouselExampleSlidesOnly {
+      width: 100%; }
+  #promociones h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: .5em; }
+  #promociones .promos {
+    width: 80%;
+    margin: 0 auto; }
+    #promociones .promos p {
+      margin-top: .7em;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #007200;
+      text-align: center; }
+    #promociones .promos article {
+      margin-bottom: 1em;
+      padding: 1em;
+      border-radius: .8em; }
+    #promociones .promos .promos-current {
+      background: rgba(0, 0, 0, 0.1); }
+      #promociones .promos .promos-current .promo-1 ul {
+        border-bottom: 2px solid #ccc;
+        padding: 0; }
+        #promociones .promos .promos-current .promo-1 ul li {
+          margin-bottom: 1em;
+          font-size: 1.1rem;
+          font-weight: 600;
+          text-align: center; }
+          #promociones .promos .promos-current .promo-1 ul li span {
+            display: block;
+            text-align: center;
+            font-weight: 300; }
+      #promociones .promos .promos-current .promo-2 img {
+        height: 15em;
+        object-fit: cover; }
+      #promociones .promos .promos-current .promo-2 h3 {
+        margin: 1em 0;
+        padding-bottom: 1em;
+        text-align: center;
+        font-size: 1.5rem;
+        border-bottom: 2px solid #ccc; }
+    #promociones .promos .promo-new .promo-3 h3 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 800;
+      color: #202020;
+      animation-name: promo-new;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate; }
+    #promociones .promos .promo-new .promo-3 .promo-container {
+      padding: 1em;
+      border-radius: .8em;
+      background: #202020; }
+    #promociones .promos .promo-new .promo-3 p {
+      color: #f1f1f1; }
+
+footer a {
+  text-decoration: none; }
+
+#contacto .contacto-contenedor {
+  width: 90%;
+  margin: 0 auto;
+  padding: 5em 0 1em; }
+  #contacto .contacto-contenedor .form-title {
+    text-align: center; }
+    #contacto .contacto-contenedor .form-title h1 {
+      font-size: 2.5rem;
+      font-weight: 800; }
+  #contacto .contacto-contenedor form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 1em auto; }
+    #contacto .contacto-contenedor form input, #contacto .contacto-contenedor form select, #contacto .contacto-contenedor form textarea {
+      width: 100%;
+      margin-bottom: 2em;
+      font-family: inherit; }
+    #contacto .contacto-contenedor form input[type="text"],
+    #contacto .contacto-contenedor form input[type="mail"],
+    #contacto .contacto-contenedor form textarea {
+      padding: 1em 1em .5em 0;
+      background: none;
+      border: none;
+      border-bottom: 1px solid #70e000;
+      text-align: left;
+      font-size: .9rem; }
+    #contacto .contacto-contenedor form select {
+      padding: .5em;
+      background: none;
+      border: 1px solid #70e000; }
+      #contacto .contacto-contenedor form select option {
+        text-align: center; }
+    #contacto .contacto-contenedor form textarea {
+      resize: none;
+      width: 100%;
+      height: 3em; }
+    #contacto .contacto-contenedor form input[type="submit"] {
+      width: 50%;
+      padding: .7em 1em;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      background: #70e000;
+      border: none;
+      cursor: pointer; }
+  #contacto .contacto-contenedor img {
+    display: block;
+    width: 40%;
+    margin: 0 auto; }
+
+@media only screen and (min-width: 425px) {
+  main .local .main-info h1 {
+    font-size: 3.5rem; }
+  #carta .carta-info h1 {
+    font-size: 3rem; }
+  #delivery .soon h1 {
+    font-size: 2.8rem; }
+  #delivery .now {
+    width: 80%;
+    margin: 0 auto; }
+    #delivery .now .wpp-delivery a {
+      font-size: 1rem; }
+    #delivery .now .wpp-delivery p img {
+      width: 2em;
+      height: 2em; }
+  #delivery .business-hours {
+    padding: 1em; }
+    #delivery .business-hours p {
+      font-size: 1.2rem; }
+    #delivery .business-hours .title-hours {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+      #delivery .business-hours .title-hours img {
+        width: 2.2em;
+        height: 2.2em; }
+      #delivery .business-hours .title-hours h2 {
+        font-size: 1.6rem; }
+  #promociones .promos {
+    width: 60%; }
+    #promociones .promos article {
+      margin-bottom: 2em; }
+    #promociones .promos p {
+      margin-top: .6em;
+      font-size: 1.8rem; }
+    #promociones .promos .promos-current .promo-1 ul li {
+      font-size: 1.2rem; } }
+
+@media only screen and (min-width: 768px) {
+  main .local .main-info h1 {
+    display: block;
+    font-size: 4.5rem; }
+  main .local .main-info p {
+    font-size: 1.7rem; }
+  main .local .wpp {
+    width: 40%; }
+    main .local .wpp a {
+      font-size: 1.2rem; }
+  main .daymenu {
+    width: 90%;
+    margin: 0 auto; }
+    main .daymenu .daymenu-info h2 {
+      font-size: 3rem; }
+    main .daymenu .daymenu-info p {
+      font-size: 1.5rem;
+      font-weight: 400; }
+    main .daymenu .daymenu-img {
+      margin: 0 auto;
+      width: 60%; }
+      main .daymenu .daymenu-img .img p {
+        font-size: 1.7rem;
+        font-weight: 400; }
+  footer {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    padding: 2em;
+    text-align: center; }
+    footer .info {
+      display: flex;
+      flex-flow: column;
+      align-items: flex-start;
+      width: 50%; }
+      footer .info h5 {
+        margin-bottom: 1em;
+        font-size: 1rem;
+        color: #70e000; }
+      footer .info p {
+        margin-bottom: 1em;
+        color: #f1f1f1; }
+        footer .info p:last-of-type {
+          margin: 0; }
+    footer .social {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: flex-end;
+      width: 50%; }
+      footer .social a {
+        margin-bottom: 2em; }
+        footer .social a:last-of-type {
+          margin: 0; }
+  #carta h2 {
+    text-align: center;
+    font-size: 3.7rem; }
+  #carta .carta-info {
+    width: 65%;
+    margin: 0 auto; }
+    #carta .carta-info h1 {
+      font-size: 4rem; }
+    #carta .carta-info p {
+      margin-bottom: 3em;
+      font-size: 1.4rem;
+      font-weight: 300; }
+  #carta .specials-container {
+    width: 65%;
+    margin: 0 auto; }
+    #carta .specials-container .special {
+      margin-top: -1.3em;
+      font-weight: 300;
+      font-size: 1.5rem; }
+  #carta .foods {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 0 8em; }
+    #carta .foods .img {
+      display: flex;
+      justify-content: space-between;
+      align-items: initial;
+      border-radius: .8em; }
+      #carta .foods .img img {
+        width: 30%; }
+      #carta .foods .img .food-info {
+        width: 70%;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em; }
+        #carta .foods .img .food-info p {
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.3em;
+          text-align: left; }
+        #carta .foods .img .food-info .price {
+          font-size: 2.2rem;
+          margin-left: .5em; }
+  #delivery .title-container {
+    width: 40%; }
+  #delivery .soon {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 5em; }
+    #delivery .soon h1 {
+      margin: 0;
+      text-align: left;
+      font-size: 3rem;
+      display: flex;
+      flex-flow: column; }
+    #delivery .soon img {
+      width: 40%; }
+  #delivery .now {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4em auto;
+    padding: 1em;
+    border: 2px solid #000;
+    border-radius: 1em; }
+    #delivery .now .wpp-delivery {
+      margin: 0;
+      padding: 0; }
+      #delivery .now .wpp-delivery a {
+        text-align: right;
+        font-size: .9rem; }
+      #delivery .now .wpp-delivery img {
+        font-size: 1rem; }
+      #delivery .now .wpp-delivery p {
+        margin-bottom: 0; }
+  #delivery .business-hours {
+    width: 80%;
+    margin: 0 auto; }
+    #delivery .business-hours .title-hours {
+      width: 90%;
+      display: flex;
+      justify-content: flex-start;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+      #delivery .business-hours .title-hours img {
+        margin: 0 1em .5em 0; }
+      #delivery .business-hours .title-hours h2 {
+        text-align: center;
+        margin-bottom: .5em; }
+    #delivery .business-hours p {
+      margin: 1em 0; }
+      #delivery .business-hours p:last-of-type {
+        margin: 0; }
+  #promociones .promo-image img {
+    height: 30vh; }
+  #promociones h1 {
+    font-size: 3rem; }
+  #promociones .promos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 90%; }
+    #promociones .promos .promos-current {
+      width: 40%; }
+      #promociones .promos .promos-current .promo-2 img {
+        height: 13em; }
+    #promociones .promos .promo-new {
+      width: 50%; }
+      #promociones .promos .promo-new .promo-3 h3 {
+        margin-bottom: .5em; }
+  #contacto .contacto-contenedor {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center; }
+    #contacto .contacto-contenedor .form-title {
+      width: 100%;
+      margin-bottom: 2em; }
+      #contacto .contacto-contenedor .form-title h1 {
+        font-size: 3rem; }
+      #contacto .contacto-contenedor .form-title p {
+        font-size: 1.2rem;
+        font-weight: 300; }
+    #contacto .contacto-contenedor form {
+      width: 50%; }
+    #contacto .contacto-contenedor img {
+      width: 25%;
+      height: 25%; } }
+
+@media only screen and (min-width: 900px) {
+  header {
+    background: rgba(0, 0, 0, 0.6);
+    transition: background .3s; }
+    header nav {
+      background-color: transparent; }
+      header nav .logo-container .logo {
+        display: block;
+        width: 140px; }
+      header nav .logo-container .logo-name {
+        display: none; }
+      header nav .hamburger-btn {
+        display: none; }
+      header nav .nav-list {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 80px;
+        top: 0;
+        background: none;
+        transition: none; }
+        header nav .nav-list li {
+          visibility: visible;
+          line-height: 100px;
+          margin: 0 20px;
+          transition: none; }
+          header nav .nav-list li a {
+            font-size: 1.1rem; }
+            header nav .nav-list li a:hover {
+              color: #70e000;
+              transition: .3s; }
+      header nav .navbtn-container {
+        display: flex;
+        width: 20%; }
+        header nav .navbtn-container .nav-btn {
+          display: flex;
+          padding: .7em 1em;
+          color: #000;
+          font-size: 1.2rem;
+          font-weight: 700;
+          background-color: #70e000;
+          border-radius: 1em; }
+          header nav .navbtn-container .nav-btn:hover {
+            background: #70e000;
+            box-shadow: 0 0 10px #70e000, 0 0 30px #70e000, 0 0 20px #70e000;
+            transition: .3s; }
+  .bg {
+    background: rgba(0, 0, 0, 0.6); }
+  .scroll {
+    box-shadow: 0px -32px 39px 46px rgba(0, 0, 0, 0.52);
+    background: #202020; }
+  main .local .wpp a:hover {
+    transform: scale(1.2);
+    transition: .5s; }
+  main .daymenu .daymenu-img .img {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 3em;
+    border: none;
+    border-radius: 1em;
+    box-shadow: 20px 19px 40px 1px rgba(0, 0, 0, 0.51); }
+    main .daymenu .daymenu-img .img:hover {
+      transition: all .4s;
+      background: #007200;
+      color: #f1f1f1; }
+    main .daymenu .daymenu-img .img p {
+      width: 70%;
+      padding: 0;
+      text-align: center;
+      font-weight: 500;
+      font-size: 1.7rem;
+      color: inherit; }
+    main .daymenu .daymenu-img .img img {
+      width: 30%;
+      border: none;
+      border-bottom-left-radius: 1em;
+      border-top-right-radius: 0; }
+  footer .social a:hover {
+    animation-name: red_social;
+    animation-duration: 1s; }
+  #carta h2 {
+    font-size: 3rem; }
+  #carta .carta-info {
+    padding-top: 5.5em; }
+    #carta .carta-info h1 {
+      font-size: 3.3rem; }
+    #carta .carta-info p {
+      font-size: 1.3rem;
+      font-weight: 400; }
+  #carta .foods {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0;
+    width: 60%; }
+    #carta .foods .img {
+      display: flex;
+      flex-flow: column;
+      align-items: initial;
+      width: 40%;
+      box-shadow: 0px 8px 24px 5px rgba(0, 0, 0, 0.45); }
+      #carta .foods .img:hover {
+        transform: scale(1.1);
+        transition: .2s; }
+      #carta .foods .img img {
+        width: 100%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0; }
+      #carta .foods .img .food-info {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 100%; }
+        #carta .foods .img .food-info p {
+          margin-bottom: .5em;
+          padding: 0 .1em;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.1em;
+          text-align: center; }
+        #carta .foods .img .food-info .price {
+          margin: 0;
+          padding: 0;
+          font-weight: 700;
+          color: #007200; }
+  #carta .specials-container .special {
+    margin-top: -1.5em;
+    margin-bottom: 3em;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.7rem; }
+  #delivery .now .wpp-delivery a {
+    transform: none; }
+    #delivery .now .wpp-delivery a:active {
+      background: #004400;
+      transition: background .3s; }
+  #promociones .promo-image {
+    padding: 0; }
+  #promociones .promos .promos-current .promo-1 ul li {
+    font-size: 1.35rem; }
+  #promociones .promos .promos-current .promo-2 img {
+    height: 15em; }
+  #contacto .contacto-contenedor form input[type="submit"]:active {
+    background: #60c000;
+    transform: scale(0.9);
+    transition: all .1s; } }
+
+@media only screen and (min-width: 1024px) {
+  main .local .main-info p {
+    font-size: 1.8rem; }
+  main .local .wpp {
+    width: 25%;
+    margin: 0 auto; }
+    main .local .wpp a {
+      font-size: 1.3rem; }
+  main .daymenu .daymenu-info h2 {
+    font-size: 4rem; }
+  main .daymenu .daymenu-info p {
+    font-size: 1.5rem; }
+  main .daymenu .daymenu-img {
+    width: 70%; }
+  footer {
+    font-size: 1.4rem; }
+    footer .info h5 {
+      font-size: 2rem; }
+  #carta {
+    width: 100%;
+    padding: 1em; }
+    #carta h2 {
+      margin: 1em 0;
+      text-align: center;
+      font-size: 3rem; }
+    #carta .carta-info {
+      width: 100%;
+      padding-top: 7em;
+      margin-bottom: 2em;
+      text-align: center; }
+      #carta .carta-info h1 {
+        font-size: 4rem;
+        margin-bottom: .2em; }
+      #carta .carta-info p {
+        font-size: 1.6rem;
+        font-weight: 400; }
+    #carta .foods {
+      width: 80%; }
+      #carta .foods .img {
+        margin: 2em; }
+  #delivery .soon .title-container h1 {
+    font-size: 5rem; }
+  #promociones h1 {
+    font-size: 3.4rem; }
+  #promociones .promos {
+    display: flex;
+    justify-content: flex-start;
+    width: 90%; }
+    #promociones .promos .promos-current {
+      width: 30%;
+      margin-right: 2em; }
+      #promociones .promos .promos-current .promo-2 img {
+        height: 15em; }
+    #promociones .promos .promo-new {
+      position: absolute;
+      right: -3px;
+      width: 30%;
+      padding: 0; }
+      #promociones .promos .promo-new .promo-3 h3 {
+        font-size: 3rem;
+        margin-bottom: 0; }
+      #promociones .promos .promo-new .promo-3 .promo-container {
+        border-radius: .8em 0 0 .8em; }
+  #contacto .contacto-contenedor form input[type="text"],
+  #contacto .contacto-contenedor form input[type="mail"],
+  #contacto .contacto-contenedor form textarea {
+    font-size: 1.3rem; }
+  #contacto .contacto-contenedor form select {
+    font-size: 1.3rem; }
+  #contacto .contacto-contenedor img {
+    width: 20%; } }
+
+@media only screen and (min-width: 1280px) {
+  #carta h2 {
+    text-align: center;
+    font-size: 3rem; }
+  #carta .carta-info {
+    width: 90%;
+    padding-top: 5em; }
+    #carta .carta-info h1 {
+      font-size: 4rem; }
+    #carta .carta-info p {
+      font-size: 1.6rem;
+      font-weight: 300; }
+  #carta .foods {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0em;
+    width: 80%; }
+    #carta .foods .img {
+      width: 25%; }
+      #carta .foods .img .food-info p {
+        margin-bottom: .5em;
+        padding: 0 .1em;
+        font-size: 2.3rem;
+        font-weight: 500;
+        text-align: center;
+        line-height: 1.1em; }
+      #carta .foods .img .food-info .price {
+        margin: none;
+        padding: none;
+        font-size: 3rem;
+        font-weight: 700;
+        color: #007200; }
+  #carta .specials-container .special {
+    margin-top: -1.5em;
+    margin-bottom: 3em;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.7rem; }
+  #promociones h1 {
+    text-align: left;
+    padding-left: 2em;
+    font-size: 4.5rem; }
+  #promociones .promos .promos-current .promo-1 ul li {
+    font-size: 1.4rem; }
+  #promociones .promos .promos-current .promo-2 img {
+    height: 16em; }
+  #promociones .promos .promo-new {
+    width: 20%; } }

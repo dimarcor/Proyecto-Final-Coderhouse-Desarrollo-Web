@@ -1,0 +1,99 @@
+#promociones {
+    padding-bottom: 1em;
+    img {
+        width: 100%;
+    }
+    .promo-image {
+        width: 100%;
+        padding-top: 52px;
+        margin-bottom: 1em;
+        img {
+            object-fit: cover;
+        }
+        #carouselExampleSlidesOnly {
+            width: 100%;
+        }
+    }
+    h1 {
+        text-align: center;
+        font-size: 2.3rem;
+        font-weight: bold;
+        color: #000;
+        margin-bottom: .5em;
+    }
+    .promos {
+        width: 80%;
+        margin: 0 auto;
+        p {
+            margin-top: .7em;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: $darkgreen;
+            text-align: center;
+        }
+        article {
+            margin-bottom: 1em;
+            padding: 1em;
+            border-radius: .8em;
+        }
+        .promos-current {
+            background: rgba(0,0,0,.1);
+            .promo-1 {
+                ul {
+                    border-bottom: 2px solid #ccc;
+                    padding: 0;
+                    li {
+                        margin-bottom: 1em;
+                        font-size: 1.1rem;
+                        font-weight: 600;
+                        text-align: center;
+                        span {
+                            display: block;
+                            text-align: center;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+            .promo-2 {
+                img {
+                    height: 15em;
+                    object-fit: cover;
+                }
+                h3 {
+                    margin: 1em 0;
+                    padding-bottom: 1em;
+                    text-align: center;
+                    font-size: 1.5rem;
+                    border-bottom: 2px solid #ccc;
+                }
+            }
+        }
+        .promo-new {
+            .promo-3 {
+                h3 {
+                    text-align: center;
+                    font-size: 2rem;
+                    font-weight: 800;
+                    color: $lightblack;
+                    animation-name: promo-new;
+                    animation-duration: 1s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                }
+                .promo-container {
+                    padding: 1em;
+                    border-radius: .8em;
+                    background: $lightblack;
+                    }
+                    p {
+                        color: $whitecustom;
+                    }
+                }
+            }
+        }
+    }
+
+footer a {
+    text-decoration: none;
+}

@@ -1,0 +1,75 @@
+header {
+    position: fixed;
+        top: 0;
+        left: 0;
+    width: 100%;
+    background-color: $darkgreen;
+    z-index: 1;
+    box-shadow: 0px -32px 39px 46px rgba(0,0,0,0.52);
+    nav {
+        display: flex;
+            justify-content: space-between;
+            align-items: center;
+        width: 100%;
+        .logo-container {
+            display: flex;
+                align-items: center;
+            padding-left: 1em;
+            .logo {
+            display: none;
+            }
+            .logo-name {
+            font-family: 'Shadows Into Light', cursive;
+            font-size: 2rem;
+            letter-spacing: .2rem;
+            color: $whitecustom;
+            }
+        }
+        #check {
+            display: none;
+            &:checked ~ .nav-list {
+                height: 100vh;
+                li {
+                    visibility: visible;
+                }
+            }
+        }
+        .hamburger-btn {
+            display: block;
+            padding-right: .5em;
+            font-size: 2.4rem;
+            color: $whitecustom;
+            line-height: 4rem;
+            cursor: pointer;
+        }
+        .nav-list {
+            position: absolute;
+            width: 100%;
+            height: 0vh;
+            top: 64px;
+            background: $lightblack;
+            text-align: center;
+            transition: all .5s;
+            li {
+                visibility: hidden;
+                line-height: 1.8rem;
+                margin: 3em 0;
+                a {
+                    color: $whitecustom;
+                    font-size: 1.2rem;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                }
+                
+            }
+        }
+        .navbtn-container {
+            display: none;
+            .nav-btn {
+                display: none;
+                text-decoration: none;
+            }
+            
+        }
+    }
+}

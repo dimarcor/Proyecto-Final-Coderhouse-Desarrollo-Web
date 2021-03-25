@@ -1,0 +1,84 @@
+#delivery {
+    width: 100%;
+    padding: 1em;
+    .title-container{
+        width: 100%;
+    }
+    .soon {
+        display: flex;
+        flex-flow: column;
+            align-items: center;
+        padding-top: 4em;
+        margin-bottom: 3em;
+        h1 {
+                margin-bottom: 1em;
+                text-align: center;
+                font-size: 2rem;
+        }
+        img {
+            width: 80%;
+            border-radius: 1em;
+        }
+    }
+    .now {
+        width: 100%;
+        p {
+            text-align: center;
+            font-size: 1.6rem;
+            color: $lightblack;
+        }
+        .wpp-delivery {
+            a {
+                font-size: 0.9rem;
+            }
+            p {
+                display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                padding: .7em 1em;
+                margin: 1em 0;
+                font-size: 1.1rem;
+                font-weight: 600;
+                background-color: $lightgreen;
+                color: #000;
+                border-radius: 1em;
+                img {
+                    width: 2.2em;
+                    height: 2.2em;
+                }
+            }
+        }
+    }
+    .business-hours {
+        width: 100%;
+        margin: 2em 0;
+        padding: .5em;
+        background: rgba(0,0,0,.1);
+        border-radius: 1em;
+        display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        .title-hours {
+            width: 90%;
+            display: flex;
+                place-items: center;
+            border-bottom: 1px solid rgba(0,0,0,.3);
+            img {
+                width: 2em;
+                height: 2em;
+            }
+            h2 {
+                font-size: 1.5rem;
+                text-align: center;
+                margin-bottom: .5em;
+            }
+        }
+        p {
+            margin: 1em 0;
+            &:last-of-type {
+                margin: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,857 @@
+@media only screen and (min-width: 425px) {
+    main {
+        .local {
+            .main-info {
+                h1 {
+                    font-size: 3.5rem;
+                }
+            }
+        }
+    }
+
+// Carta
+
+    #carta {
+        .carta-info {
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    }
+
+// Carta
+
+    #delivery {
+        .soon {
+            h1 {
+                font-size: 2.8rem;
+            }
+        }
+        .now {
+            width: 80%;
+            margin: 0 auto;
+            .wpp-delivery {
+                a {
+                    font-size: 1rem;
+                }
+                p {
+                    img {
+                        width: 2em;
+                        height: 2em;
+                    }
+                }
+            }
+        }
+        .business-hours {
+            padding: 1em;
+            p {
+                font-size: 1.2rem;
+            }
+            .title-hours {
+                width: 90%;
+                display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                border-bottom: 1px solid rgba(0,0,0,.3);
+                img {
+                    width: 2.2em;
+                    height: 2.2em;
+                }
+                h2 {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+
+// Promociones
+
+    #promociones {
+        .promos {
+            width: 60%;
+            article {
+                margin-bottom: 2em;
+            }
+            p {
+                margin-top: .6em;
+                font-size: 1.8rem;
+            }
+            .promos-current {
+                .promo-1 {
+                    ul {
+                        li {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    
+    main {
+        .local {
+            .main-info {
+                h1 {
+                    display: block;
+                    font-size: 4.5rem;
+                }
+                p {
+                    font-size: 1.7rem;
+                }
+            }
+            .wpp {
+                width: 40%;
+                a {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .daymenu {
+            width: 90%;
+            margin: 0 auto;
+            .daymenu-info {
+                h2 {
+                    font-size: 3rem;
+                }
+                p {
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                }
+            }
+            .daymenu-img {
+                margin: 0 auto;
+                width: 60%;
+                .img {
+                    p {
+                        font-size: 1.7rem;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+            flex-flow: row;
+        width: 100%;
+        padding: 2em;
+        text-align: center;
+        .info {
+            display: flex;
+                flex-flow: column;
+                align-items: flex-start;
+            width: 50%;
+            h5 {
+                margin-bottom: 1em;
+                font-size: 1rem;
+                color: $lightgreen;
+            }
+            p {
+                margin-bottom: 1em;
+                color: $whitecustom;
+                &:last-of-type {
+                    margin: 0;
+                }
+            }
+        }
+        .social {
+            display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-items: flex-end;
+            width: 50%;
+            a {
+                margin-bottom: 2em;
+                &:last-of-type {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    // Carta
+
+    #carta {
+        h2 {
+            text-align: center;
+            font-size: 3.7rem;
+        }
+        .carta-info {
+            width: 65%;
+            margin: 0 auto;
+            h1 {
+                font-size: 4rem;
+            }
+            p {
+                margin-bottom: 3em;
+                font-size: 1.4rem;
+                font-weight: 300;
+            }
+        }
+        .specials-container {
+            width: 65%;
+            margin: 0 auto;
+            .special {
+                margin-top: -1.3em;
+                font-weight: 300;
+                font-size: 1.5rem;
+            }
+        }
+        .foods {
+            display: flex;
+                flex-flow: row wrap;
+            width: 100%;
+            padding: 0 8em;
+            .img {
+                display: flex;
+                    justify-content: space-between;
+                    align-items: initial;
+                border-radius: .8em;
+                img {
+                    width: 30%;
+                }
+                .food-info {
+                    width: 70%;
+                        display:flex;
+                        flex-flow: row;
+                        justify-content: space-between;
+                        align-items: center;
+                    padding: 1em;
+                    p {
+                        font-size: 1.8rem;
+                        font-weight: 600;
+                        line-height: 1.3em;
+                        text-align: left;
+                    }
+                    .price {
+                        font-size: 2.2rem;
+                        margin-left: .5em;
+                    }
+                }
+            }
+        }
+    }
+
+    // Delivery
+
+    #delivery {
+        .title-container {
+            width: 40%;
+        }
+        .soon {
+            display: flex;
+            flex-flow: row;
+                align-items: center;
+                justify-content: space-around;
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 5em;
+            h1 {
+                margin: 0;
+                text-align: left;
+                font-size: 3rem;
+                display: flex;
+                    flex-flow: column;
+            }
+            img {
+                width: 40%;
+            }
+        }
+        .now {
+            display: flex;
+                flex-flow: row-reverse;
+                justify-content: space-between;
+                align-items: center;
+            margin: 4em auto;
+            padding: 1em;
+            border: 2px solid #000;
+            border-radius: 1em;
+            .wpp-delivery {
+                margin: 0;
+                padding: 0;
+                a {
+                    text-align: right;
+                    font-size: .9rem;
+                }
+                img {
+                    font-size: 1rem;
+                }
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .business-hours {
+            width: 80%;
+            margin: 0 auto;
+            .title-hours {
+                width: 90%;
+                display: flex;
+                    justify-content: flex-start;
+                border-bottom: 1px solid rgba(0,0,0,.3);
+                img {
+                    margin: 0 1em .5em 0;
+                }
+                h2 {
+                    text-align: center;
+                    margin-bottom: .5em;
+                }
+            }
+            p {
+                margin: 1em 0;
+                &:last-of-type {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    // Promociones
+
+    #promociones {
+        .promo-image {
+            img {
+                height: 30vh;
+            }
+        }
+        h1 {
+            font-size: 3rem;
+        }
+        .promos {
+            display: flex;
+                flex-flow: row wrap;
+                justify-content: space-evenly;
+            width: 90%;
+            .promos-current {
+                width: 40%;
+                .promo-2 {
+                    img {
+                        height: 13em;
+                    }
+                }
+            }
+            .promo-new {
+                width: 50%;
+                .promo-3 {
+                    h3 {
+                        margin-bottom: .5em;
+                    }
+                }
+            }
+        }
+    }
+
+    // Contacto
+
+    #contacto {
+        .contacto-contenedor {
+            display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+            .form-title {
+                width: 100%;
+                margin-bottom: 2em;
+                h1 {
+                    font-size: 3rem;
+                }
+                p {
+                    font-size: 1.2rem;
+                    font-weight: 300;
+                }
+            }
+            form {
+                width: 50%;
+            }
+            img {
+                width: 25%;
+                height: 25%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    header {
+        background: rgba(0,0,0,.6);
+        transition: background .3s;
+        nav {
+            background-color: transparent;
+            .logo-container {
+                .logo {
+                    display: block;
+                    width: 140px;
+                }
+                .logo-name {
+                    display:none;
+                }
+            }
+            .hamburger-btn {
+                display: none;
+            }
+            .nav-list {
+                display: flex;
+                    flex-flow: row;
+                    justify-content: center;
+                    align-items: center;
+                position: relative;
+                height: 80px;
+                top: 0;
+                background: none;
+                transition: none;
+                li {
+                    visibility: visible;
+                    line-height: 100px;
+                    margin: 0 20px;
+                    transition: none;
+                    a {
+                        font-size: 1.1rem;
+                        &:hover {
+                            color: $lightgreen;
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+            .navbtn-container {
+                display: flex;
+                width: 20%;
+                .nav-btn {
+                    display: flex;
+                    padding: .7em 1em;
+                    color: #000;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    background-color: $lightgreen;
+                    border-radius: 1em;
+                    &:hover {
+                        background: #70e000;
+                        box-shadow: 0 0 10px #70e000, 0 0 30px #70e000, 0 0 20px #70e000;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+    }
+
+    .bg {
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .scroll {
+        box-shadow: 0px -32px 39px 46px rgba(0,0,0,0.52);
+        background: $lightblack;
+    }
+
+    main {
+        .local {
+            .wpp {
+                a:hover {
+                    transform: scale(1.2);
+                    transition: .5s;
+                }
+            }
+        }
+        .daymenu {
+            .daymenu-img {
+                .img {
+                    display: flex;
+                        flex-flow: row;
+                        justify-content: space-between;
+                        align-items: center;
+                    width: 100%;
+                    margin-bottom: 3em;
+                    border:none;
+                    border-radius: 1em;
+                    box-shadow: 20px 19px 40px 1px rgba(0,0,0,0.51);
+                    &:hover {
+                        transition: all .4s;
+                        background: $darkgreen;
+                        color: $whitecustom;
+                    }
+                    p {
+                        width:70%;
+                        padding: 0;
+                        text-align: center;
+                        font-weight: 500;
+                        font-size: 1.7rem;
+                        color: inherit;
+                    }
+                    img {
+                        width: 30%;
+                        border: none;
+                        border-bottom-left-radius: 1em;
+                        border-top-right-radius: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .social {
+            a:hover{
+                    animation-name: red_social;
+                    animation-duration: 1s;
+                }
+            }
+        }
+
+    // Carta
+
+    #carta {
+        h2 {
+            font-size: 3rem;
+        }
+        .carta-info {
+            padding-top: 5.5em;
+            h1 {
+                font-size: 3.3rem;
+            }
+            p {
+                font-size: 1.3rem;
+                font-weight: 400;
+            }
+        }
+        .foods {
+            display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+            padding: 0;
+            width: 60%;
+            .img {
+                display: flex;
+                    flex-flow: column;
+                    align-items: initial;
+                width: 40%;
+                box-shadow: 0px 8px 24px 5px rgba(0,0,0,0.45);
+                &:hover {
+                    transform: scale(1.1);
+                    transition: .2s;
+                }
+                img {
+                    width: 100%;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                }
+                .food-info {
+                    display: flex;
+                        flex-flow: column;
+                        align-items: center;
+                    width: 100%;
+                    p {
+                        margin-bottom: .5em;
+                        padding: 0 .1em;
+                        font-size: 1.8rem;
+                        font-weight: 600;
+                        line-height: 1.1em;
+                        text-align: center;
+                    }
+                    .price {
+                        margin: 0;
+                        padding: 0;
+                        font-weight: 700;
+                        color: $darkgreen
+                    }
+                }
+            }
+        }
+        .specials-container {
+            .special {
+                margin-top: -1.5em;
+                margin-bottom: 3em;
+                text-align: center;
+                font-weight: 400;
+                font-size: 1.7rem;
+            }
+        }
+    }
+
+    // Delivery
+    
+    #delivery {
+        .now {
+            .wpp-delivery {
+                a {
+                    transform: none;
+                    &:active{
+                        background: #004400;
+                        transition: background .3s;
+                    }
+                }
+            }
+        }
+    }
+
+    // Promociones
+
+    #promociones {
+        .promo-image {
+            padding: 0;
+        }
+        .promos {
+            .promos-current {
+                .promo-1 {
+                    ul {
+                        li {
+                            font-size: 1.35rem;
+                        }
+                    }
+                }
+                .promo-2 {
+                    img {
+                        height: 15em;
+                    }
+                }
+            }
+        }
+    }
+
+    // Contacto
+
+    #contacto {
+        .contacto-contenedor {
+            form {
+                input[type="submit"]:active {
+                    background: #60c000;
+                    transform: scale(.9);
+                    transition: all .1s;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width:1024px) {
+    
+    main {
+        .local {
+            .main-info {
+                p {
+                    font-size: 1.8rem;
+                }
+            }
+            .wpp {
+                width: 25%;
+                margin: 0 auto;
+                a {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        .daymenu {
+            .daymenu-info {
+                h2 {
+                    font-size: 4rem;
+                }
+                p {
+                    font-size: 1.5rem;
+                }
+            }
+            .daymenu-img {
+                width: 70%;
+            }
+        }
+    }
+
+    footer {
+        font-size: 1.4rem;
+        .info {
+            h5 {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    // Carta
+
+    #carta {
+        width: 100%;
+        padding: 1em;
+        h2 {
+            margin: 1em 0;
+            text-align: center;
+            font-size: 3rem;
+        }
+        .carta-info {
+            width: 100%;
+            padding-top: 7em;
+            margin-bottom: 2em;
+            text-align: center;
+            h1 {
+                font-size: 4rem;
+                margin-bottom: .2em;
+            }
+            p {
+                font-size: 1.6rem;
+                font-weight: 400;
+            }
+        }
+        .foods {
+            width: 80%;
+            .img {
+                margin: 2em;
+            }
+        }
+    }
+
+    // Delivery
+
+    #delivery {
+        .soon {
+            .title-container {
+                h1 {
+                    font-size: 5rem;
+                }
+            }
+        }
+    }
+
+    // Promociones
+
+    #promociones {
+        h1 {
+            font-size: 3.4rem;
+        }
+        .promos {
+            display: flex;
+                justify-content: flex-start;
+            width: 90%;
+            .promos-current {
+                width: 30%;
+                margin-right: 2em;
+                .promo-2 {
+                    img {
+                        height: 15em;
+                    }
+                }
+            }
+            .promo-new {
+                position: absolute;
+                    right: -3px;
+                width: 30%;
+                padding: 0;
+                .promo-3 {
+                    h3 {
+                        font-size: 3rem;
+                        margin-bottom: 0;
+                    }
+                    .promo-container {
+                        border-radius: .8em 0 0 .8em;
+                    }
+                }
+            }
+        }
+    }
+
+    // Contacto
+
+    #contacto {
+        .contacto-contenedor {
+            form {
+                input[type="text"],
+                input[type="mail"],
+                textarea {
+                    font-size: 1.3rem;
+                }
+                select {
+                    font-size: 1.3rem;
+                }
+            }
+            img {
+                width: 20%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1280px) {
+
+    // Carta
+
+    #carta {
+        h2 {
+            text-align: center;
+            font-size: 3rem;
+        }
+        .carta-info {
+            width: 90%;
+            padding-top: 5em;
+            h1 {
+                font-size: 4rem;
+            }
+            p {
+                font-size: 1.6rem;
+                font-weight: 300;
+            }
+        }
+        .foods {
+            display: flex;
+                justify-content: space-evenly;
+            padding: 0 0em;
+            width: 80%;
+            .img {
+                width: 25%;
+                .food-info {
+                    p {
+                        margin-bottom: .5em;
+                        padding: 0 .1em;
+                        font-size: 2.3rem;
+                        font-weight: 500;
+                        text-align: center;
+                        line-height: 1.1em;
+                    }
+                    .price {
+                        margin: none;
+                        padding: none;
+                        font-size: 3rem;
+                        font-weight: 700;
+                        color: $darkgreen
+                    }
+                }
+            }
+        }
+        .specials-container {
+            .special {
+                margin-top: -1.5em;
+                margin-bottom: 3em;
+                text-align: center;
+                font-weight: 400;
+                font-size: 1.7rem;
+            }
+        }
+    }
+
+    // Promociones
+
+    #promociones {
+        h1 {
+            text-align: left;
+            padding-left: 2em;
+            font-size: 4.5rem;
+        }
+        .promos {
+            .promos-current {
+                .promo-1 {
+                    ul {
+                        li {
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+                .promo-2 {
+                    img {
+                        height: 16em;
+                    }
+                }
+            }
+            .promo-new {
+                width: 20%;
+            }
+        }
+    }
+}
