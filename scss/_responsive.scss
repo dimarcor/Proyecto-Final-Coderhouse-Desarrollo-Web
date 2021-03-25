@@ -372,6 +372,14 @@
             }
         }
     }
+
+    // Error
+
+    .error {
+        img {
+            width: 25%;
+        }
+    }
 }
 
 @media only screen and (min-width: 900px) {
@@ -771,6 +779,14 @@
             img {
                 width: 20%;
             }
+        }
+    }
+
+    // Error
+
+    .error {
+        img {
+            width: 15%;
         }
     }
 }

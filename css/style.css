@@ -455,6 +455,35 @@ footer a {
     width: 40%;
     margin: 0 auto; }
 
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh; }
+  .error__interaction {
+    margin: 1.5em 0 3em; }
+    .error__interaction h2 {
+      font-size: 1.7rem; }
+    .error__interaction h1 {
+      font-size: 3.5rem;
+      color: #007200;
+      border-bottom: 2px solid #70e000; }
+    .error__interaction p {
+      padding-top: 1em;
+      margin-bottom: 1em;
+      font-size: 1.2rem; }
+    .error__interaction a {
+      padding: .7em 1em;
+      font-weight: 700;
+      border-radius: 1em;
+      background: #70e000;
+      color: #000; }
+  .error img {
+    width: 50%; }
+
 @media only screen and (min-width: 425px) {
   main .local__info h1 {
     font-size: 3.45rem; }
@@ -682,7 +711,9 @@ footer a {
       width: 50%; }
     #contacto .form-container img {
       width: 25%;
-      height: 25%; } }
+      height: 25%; }
+  .error img {
+    width: 25%; } }
 
 @media only screen and (min-width: 900px) {
   header {
@@ -904,7 +935,9 @@ footer a {
   #contacto .form-container .form-container__form select {
     font-size: 1.3rem; }
   #contacto .form-container img {
-    width: 20%; } }
+    width: 20%; }
+  .error img {
+    width: 15%; } }
 
 @media only screen and (min-width: 1280px) {
   #carta h2 {
