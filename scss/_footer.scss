@@ -18,6 +18,22 @@ footer {
             color: $whitecustom;
         }
     }
+    .site-map {
+        width: 100%;
+        margin-bottom: 1em;
+        &__nav {
+            display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+            li {
+                a {
+                    color: $darkgreen;
+                    margin: .5em;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
     .social {
         display: flex;
             justify-content: space-around;

@@ -135,37 +135,47 @@
     }
 
     footer {
-        display: flex;
-            flex-flow: row;
         width: 100%;
         padding: 2em;
         text-align: center;
         .info {
             display: flex;
                 flex-flow: column;
-                align-items: flex-start;
-            width: 50%;
+                align-items: center;
+            width: 100%;
+            margin-bottom: 2em;
             h5 {
                 margin-bottom: 1em;
-                font-size: $fsz-small;
+                font-size: $fsz;
                 color: $lightgreen;
             }
             p {
                 margin-bottom: 1em;
+                font-size: $fsz-small*1.3;
                 color: $whitecustom;
                 &:last-of-type {
                     margin: 0;
                 }
             }
         }
+        .site-map {
+            margin-bottom: 2em;
+            &__nav {
+                li {
+                    a {
+                        font-size: $fsz-small*1.5;
+                    }
+                }
+            }
+        }
         .social {
             display: flex;
-                flex-flow: column;
+                flex-flow: row;
                 justify-content: center;
-                align-items: flex-end;
-            width: 50%;
+            width: 100%;
             a {
-                margin-bottom: 2em;
+                margin: 0 1em 2em;
+                font-size: $fsz-small*1.5;
                 &:last-of-type {
                     margin: 0;
                 }
@@ -495,6 +505,16 @@
     }
 
     footer {
+        .site-map {
+            &__nav {
+                li {
+                    a:hover {
+                        color: $lightgreen;
+                        transition: all .3s;
+                    }
+                }
+            }
+        }
         .social {
             a:hover{
                     animation-name: red_social;

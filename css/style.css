@@ -184,6 +184,17 @@ footer {
     margin-bottom: 1em;
     font-size: 1rem;
     color: #f1f1f1; }
+  footer .site-map {
+    width: 100%;
+    margin-bottom: 1em; }
+    footer .site-map__nav {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center; }
+      footer .site-map__nav li a {
+        color: #007200;
+        margin: .5em;
+        font-size: 1.1rem; }
   footer .social {
     display: flex;
     justify-content: space-around;
@@ -549,33 +560,37 @@ footer a {
         font-size: 1.7rem;
         font-weight: 400; }
   footer {
-    display: flex;
-    flex-flow: row;
     width: 100%;
     padding: 2em;
     text-align: center; }
     footer .info {
       display: flex;
       flex-flow: column;
-      align-items: flex-start;
-      width: 50%; }
+      align-items: center;
+      width: 100%;
+      margin-bottom: 2em; }
       footer .info h5 {
         margin-bottom: 1em;
-        font-size: 1rem;
+        font-size: 2rem;
         color: #70e000; }
       footer .info p {
         margin-bottom: 1em;
+        font-size: 1.3rem;
         color: #f1f1f1; }
         footer .info p:last-of-type {
           margin: 0; }
+    footer .site-map {
+      margin-bottom: 2em; }
+      footer .site-map__nav li a {
+        font-size: 1.5rem; }
     footer .social {
       display: flex;
-      flex-flow: column;
+      flex-flow: row;
       justify-content: center;
-      align-items: flex-end;
-      width: 50%; }
+      width: 100%; }
       footer .social a {
-        margin-bottom: 2em; }
+        margin: 0 1em 2em;
+        font-size: 1.5rem; }
         footer .social a:last-of-type {
           margin: 0; }
   #carta h2 {
@@ -794,6 +809,9 @@ footer a {
       border: none;
       border-bottom-left-radius: 1em;
       border-top-right-radius: 0; }
+  footer .site-map__nav li a:hover {
+    color: #70e000;
+    transition: all .3s; }
   footer .social a:hover {
     animation-name: red_social;
     animation-duration: 1s; }
