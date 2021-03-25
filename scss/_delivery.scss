@@ -29,7 +29,19 @@
         }
         .wpp-delivery {
             a {
+                display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                padding: .7em 1em;
+                text-decoration: none;
+                background-color: $darkgreen;
+                color: $whitecustom;
+                border-radius: 1em;
                 font-size: $fsz-small;
+                img {
+                    width: 2.5em;
+                    height: 2.5em;
+                }
             }
             p {
                 display: flex;

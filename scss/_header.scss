@@ -18,7 +18,7 @@ header {
             .logo {
             display: none;
             }
-            .logo-name {
+            .logo-container__name {
             font-family: $ff-secondary;
             font-size: $fsz;
             letter-spacing: .2rem;
@@ -50,7 +50,7 @@ header {
             background: $lightblack;
             text-align: center;
             transition: all .5s;
-            li {
+            .nav-list__item {
                 visibility: hidden;
                 line-height: 1.8rem;
                 margin: 3em 0;

@@ -44,7 +44,7 @@ header {
       padding-left: 1em; }
       header nav .logo-container .logo {
         display: none; }
-      header nav .logo-container .logo-name {
+      header nav .logo-container .logo-container__name {
         font-family: "Shadows Into Light", cursive;
         font-size: 2rem;
         letter-spacing: .2rem;
@@ -70,11 +70,11 @@ header {
       background: #202020;
       text-align: center;
       transition: all .5s; }
-      header nav .nav-list li {
+      header nav .nav-list .nav-list__item {
         visibility: hidden;
         line-height: 1.8rem;
         margin: 3em 0; }
-        header nav .nav-list li a {
+        header nav .nav-list .nav-list__item a {
           color: #f1f1f1;
           font-size: 1.2rem;
           text-transform: uppercase;
@@ -276,7 +276,18 @@ footer {
       font-size: 1.6rem;
       color: #202020; }
     #delivery .now .wpp-delivery a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: .7em 1em;
+      text-decoration: none;
+      background-color: #007200;
+      color: #f1f1f1;
+      border-radius: 1em;
       font-size: 1rem; }
+      #delivery .now .wpp-delivery a img {
+        width: 2.5em;
+        height: 2.5em; }
     #delivery .now .wpp-delivery p {
       display: flex;
       align-items: center;
@@ -681,7 +692,7 @@ footer a {
       header nav .logo-container .logo {
         display: block;
         width: 140px; }
-      header nav .logo-container .logo-name {
+      header nav .logo-container .logo-container__name {
         display: none; }
       header nav .hamburger-btn {
         display: none; }
