@@ -23,7 +23,7 @@ html {
   font-size: 16px; }
 
 body {
-  font-family: 'Poppins', sans-serif; }
+  font-family: "Poppins", sans-serif; }
 
 header {
   position: fixed;
@@ -45,7 +45,7 @@ header {
       header nav .logo-container .logo {
         display: none; }
       header nav .logo-container .logo-name {
-        font-family: 'Shadows Into Light', cursive;
+        font-family: "Shadows Into Light", cursive;
         font-size: 2rem;
         letter-spacing: .2rem;
         color: #f1f1f1; }
@@ -108,7 +108,7 @@ main {
         display: flex;
         flex-flow: column;
         margin-bottom: .4em;
-        font-size: 2.8rem;
+        font-size: 3rem;
         line-height: 1em;
         color: #70e000; }
       main .local .main-info p {
@@ -138,10 +138,10 @@ main {
       align-items: center; }
       main .daymenu .daymenu-info h2 {
         margin-bottom: .3em;
-        font-size: 2.1rem; }
+        font-size: 2rem; }
       main .daymenu .daymenu-info p {
         margin-bottom: 2em;
-        font-size: .95rem;
+        font-size: 0.95238rem;
         font-weight: 500;
         text-align: center; }
         main .daymenu .daymenu-info p span {
@@ -154,7 +154,7 @@ main {
       width: 100%;
       margin-bottom: 3em;
       border-radius: 1em;
-      box-shadow: 0px 10px 66px 0px rgba(0, 0, 0, 0.41); }
+      box-shadow: 0px 8px 24px 5px rgba(0, 0, 0, 0.45); }
       main .daymenu .daymenu-img .img img {
         width: 100%;
         border-top-left-radius: .8em;
@@ -182,12 +182,14 @@ footer {
     color: #70e000; }
   footer .info p {
     margin-bottom: 1em;
+    font-size: 1rem;
     color: #f1f1f1; }
   footer .social {
     display: flex;
     justify-content: space-around;
     width: 100%; }
     footer .social a {
+      font-size: 1rem;
       color: #DDA15E; }
 
 #carta {
@@ -200,7 +202,7 @@ footer {
     margin-bottom: 2em;
     text-align: center; }
     #carta .carta-info h1 {
-      font-size: 2.3rem;
+      font-size: 2.2rem;
       margin-bottom: .2em; }
     #carta .carta-info p {
       font-size: 1rem;
@@ -223,7 +225,7 @@ footer {
       border-radius: .8em;
       margin-bottom: 3em;
       background: #fff;
-      box-shadow: 10px 10px 25px -14px rgba(0, 0, 0, 0.75); }
+      box-shadow: 0px 8px 24px 5px rgba(0, 0, 0, 0.45); }
       #carta .foods .img img {
         width: 50%;
         border-top-left-radius: .8em;
@@ -274,14 +276,14 @@ footer {
       font-size: 1.6rem;
       color: #202020; }
     #delivery .now .wpp-delivery a {
-      font-size: 0.9rem; }
+      font-size: 1rem; }
     #delivery .now .wpp-delivery p {
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: .7em 1em;
       margin: 1em 0;
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-weight: 600;
       background-color: #70e000;
       color: #000;
@@ -330,7 +332,7 @@ footer {
       width: 100%; }
   #promociones h1 {
     text-align: center;
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #000;
     margin-bottom: .5em; }
@@ -354,7 +356,7 @@ footer {
         padding: 0; }
         #promociones .promos .promos-current .promo-1 ul li {
           margin-bottom: 1em;
-          font-size: 1.1rem;
+          font-size: 1rem;
           font-weight: 600;
           text-align: center; }
           #promociones .promos .promos-current .promo-1 ul li span {
@@ -416,7 +418,7 @@ footer a {
       border: none;
       border-bottom: 1px solid #70e000;
       text-align: left;
-      font-size: .9rem; }
+      font-size: 0.90909rem; }
     #contacto .contacto-contenedor form select {
       padding: .5em;
       background: none;
@@ -443,11 +445,11 @@ footer a {
 
 @media only screen and (min-width: 425px) {
   main .local .main-info h1 {
-    font-size: 3.5rem; }
+    font-size: 3.45rem; }
   #carta .carta-info h1 {
     font-size: 3rem; }
   #delivery .soon h1 {
-    font-size: 2.8rem; }
+    font-size: 2.72727rem; }
   #delivery .now {
     width: 80%;
     margin: 0 auto; }
@@ -537,12 +539,12 @@ footer a {
           margin: 0; }
   #carta h2 {
     text-align: center;
-    font-size: 3.7rem; }
+    font-size: 3.6rem; }
   #carta .carta-info {
     width: 65%;
     margin: 0 auto; }
     #carta .carta-info h1 {
-      font-size: 4rem; }
+      font-size: 3.9rem; }
     #carta .carta-info p {
       margin-bottom: 3em;
       font-size: 1.4rem;
@@ -574,12 +576,12 @@ footer a {
         align-items: center;
         padding: 1em; }
         #carta .foods .img .food-info p {
-          font-size: 1.8rem;
+          font-size: 1.5rem;
           font-weight: 600;
           line-height: 1.3em;
           text-align: left; }
         #carta .foods .img .food-info .price {
-          font-size: 2.2rem;
+          font-size: 2rem;
           margin-left: .5em; }
   #delivery .title-container {
     width: 40%; }
@@ -613,7 +615,7 @@ footer a {
       padding: 0; }
       #delivery .now .wpp-delivery a {
         text-align: right;
-        font-size: .9rem; }
+        font-size: 1rem; }
       #delivery .now .wpp-delivery img {
         font-size: 1rem; }
       #delivery .now .wpp-delivery p {
@@ -699,7 +701,7 @@ footer a {
           margin: 0 20px;
           transition: none; }
           header nav .nav-list li a {
-            font-size: 1.1rem; }
+            font-size: 1rem; }
             header nav .nav-list li a:hover {
               color: #70e000;
               transition: .3s; }
@@ -734,8 +736,7 @@ footer a {
     width: 100%;
     margin-bottom: 3em;
     border: none;
-    border-radius: 1em;
-    box-shadow: 20px 19px 40px 1px rgba(0, 0, 0, 0.51); }
+    border-radius: 1em; }
     main .daymenu .daymenu-img .img:hover {
       transition: all .4s;
       background: #007200;
@@ -774,8 +775,7 @@ footer a {
       display: flex;
       flex-flow: column;
       align-items: initial;
-      width: 40%;
-      box-shadow: 0px 8px 24px 5px rgba(0, 0, 0, 0.45); }
+      width: 40%; }
       #carta .foods .img:hover {
         transform: scale(1.1);
         transition: .2s; }
@@ -823,15 +823,17 @@ footer a {
     transition: all .1s; } }
 
 @media only screen and (min-width: 1024px) {
+  header nav .nav-list li a {
+    font-size: 1.2rem; }
   main .local .main-info p {
-    font-size: 1.8rem; }
+    font-size: 2rem; }
   main .local .wpp {
-    width: 25%;
+    width: 30%;
     margin: 0 auto; }
     main .local .wpp a {
       font-size: 1.3rem; }
   main .daymenu .daymenu-info h2 {
-    font-size: 4rem; }
+    font-size: 3.75rem; }
   main .daymenu .daymenu-info p {
     font-size: 1.5rem; }
   main .daymenu .daymenu-img {
@@ -853,7 +855,7 @@ footer a {
       margin-bottom: 2em;
       text-align: center; }
       #carta .carta-info h1 {
-        font-size: 4rem;
+        font-size: 3.9rem;
         margin-bottom: .2em; }
       #carta .carta-info p {
         font-size: 1.6rem;
@@ -863,9 +865,9 @@ footer a {
       #carta .foods .img {
         margin: 2em; }
   #delivery .soon .title-container h1 {
-    font-size: 5rem; }
+    font-size: 4.5rem; }
   #promociones h1 {
-    font-size: 3.4rem; }
+    font-size: 3.3rem; }
   #promociones .promos {
     display: flex;
     justify-content: flex-start;
@@ -902,7 +904,7 @@ footer a {
     width: 90%;
     padding-top: 5em; }
     #carta .carta-info h1 {
-      font-size: 4rem; }
+      font-size: 3.75rem; }
     #carta .carta-info p {
       font-size: 1.6rem;
       font-weight: 300; }
@@ -916,7 +918,7 @@ footer a {
       #carta .foods .img .food-info p {
         margin-bottom: .5em;
         padding: 0 .1em;
-        font-size: 2.3rem;
+        font-size: 2rem;
         font-weight: 500;
         text-align: center;
         line-height: 1.1em; }

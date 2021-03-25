@@ -9,11 +9,12 @@ footer {
     .info {
         h5 {
             margin-bottom: 1em;
-            font-size: 1rem;
+            font-size: $fsz-small;
             color: $lightgreen;
         }
         p {
             margin-bottom: 1em;
+            font-size: $fsz-small;
             color: $whitecustom;
         }
     }
@@ -22,6 +23,7 @@ footer {
             justify-content: space-around;
         width: 100%;
         a {
+            font-size: $fsz-small;
             color: $lightgold;
         }
     }

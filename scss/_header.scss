@@ -19,8 +19,8 @@ header {
             display: none;
             }
             .logo-name {
-            font-family: 'Shadows Into Light', cursive;
-            font-size: 2rem;
+            font-family: $ff-secondary;
+            font-size: $fsz;
             letter-spacing: .2rem;
             color: $whitecustom;
             }
@@ -37,7 +37,7 @@ header {
         .hamburger-btn {
             display: block;
             padding-right: .5em;
-            font-size: 2.4rem;
+            font-size: $fsz*1.2;
             color: $whitecustom;
             line-height: 4rem;
             cursor: pointer;
@@ -56,7 +56,7 @@ header {
                 margin: 3em 0;
                 a {
                     color: $whitecustom;
-                    font-size: 1.2rem;
+                    font-size: $fsz-small*1.2;
                     text-transform: uppercase;
                     text-decoration: none;
                 }

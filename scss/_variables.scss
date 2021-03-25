@@ -7,6 +7,17 @@ $lightgold: #DDA15E;
 $lightblack: #202020;
 $whitecustom: #f1f1f1;
 
-// Tamaño de Tipografías
+// Tamaño de Fuentes
 
-$h1-sm: 2.8rem;
+$fsz: 2rem;
+$fsz-small: 1rem;
+$fsz-big: 3rem;
+
+// Tipografías
+
+$ff-primary: 'Poppins', sans-serif;
+$ff-secondary: 'Shadows Into Light', cursive;
+
+// Sombras
+
+$food-shadow: 0px 8px 24px 5px rgba(0,0,0,0.45);

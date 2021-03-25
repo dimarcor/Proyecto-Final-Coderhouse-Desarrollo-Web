@@ -16,7 +16,7 @@
     }
     h1 {
         text-align: center;
-        font-size: 2.3rem;
+        font-size: $fsz;
         font-weight: bold;
         color: #000;
         margin-bottom: .5em;
@@ -26,7 +26,7 @@
         margin: 0 auto;
         p {
             margin-top: .7em;
-            font-size: 1.5rem;
+            font-size: $fsz-small*1.5;
             font-weight: 700;
             color: $darkgreen;
             text-align: center;
@@ -44,7 +44,7 @@
                     padding: 0;
                     li {
                         margin-bottom: 1em;
-                        font-size: 1.1rem;
+                        font-size: $fsz-small;
                         font-weight: 600;
                         text-align: center;
                         span {
@@ -64,7 +64,7 @@
                     margin: 1em 0;
                     padding-bottom: 1em;
                     text-align: center;
-                    font-size: 1.5rem;
+                    font-size: $fsz-small*1.5;
                     border-bottom: 2px solid #ccc;
                 }
             }
@@ -73,7 +73,7 @@
             .promo-3 {
                 h3 {
                     text-align: center;
-                    font-size: 2rem;
+                    font-size: $fsz;
                     font-weight: 800;
                     color: $lightblack;
                     animation-name: promo-new;
