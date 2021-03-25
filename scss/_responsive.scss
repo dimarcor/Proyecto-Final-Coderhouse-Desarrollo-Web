@@ -1,7 +1,7 @@
 @media only screen and (min-width: 425px) {
     main {
         .local {
-            .main-info {
+            &__info {
                 h1 {
                     font-size: $fsz-big*1.15;
                 }
@@ -30,7 +30,7 @@
         .now {
             width: 80%;
             margin: 0 auto;
-            .wpp-delivery {
+            &__phones {
                 a {
                     font-size: $fsz-small;
                 }
@@ -47,7 +47,7 @@
             p {
                 font-size: $fsz-small*1.2;
             }
-            .title-hours {
+            &__title {
                 width: 90%;
                 display: flex;
                     justify-content: space-between;
@@ -76,8 +76,8 @@
                 margin-top: .6em;
                 font-size: $fsz-small*1.8;
             }
-            .promos-current {
-                .promo-1 {
+            &__current {
+                .promos__one {
                     ul {
                         li {
                             font-size: $fsz-small*1.2;
@@ -93,7 +93,7 @@
     
     main {
         .local {
-            .main-info {
+            &__info {
                 h1 {
                     display: block;
                     font-size: $fsz-big*1.5;
@@ -102,7 +102,7 @@
                     font-size: $fsz-small*1.7;
                 }
             }
-            .wpp {
+            &__wpp {
                 width: 40%;
                 a {
                     font-size: $fsz-small*1.2;
@@ -112,7 +112,7 @@
         .daymenu {
             width: 90%;
             margin: 0 auto;
-            .daymenu-info {
+            &__info {
                 h2 {
                     font-size: $fsz-big;
                 }
@@ -121,7 +121,7 @@
                     font-weight: 400;
                 }
             }
-            .daymenu-img {
+            &__img {
                 margin: 0 auto;
                 width: 60%;
                 .img {
@@ -206,7 +206,7 @@
                 flex-flow: row wrap;
             width: 100%;
             padding: 0 8em;
-            .img {
+            &__img {
                 display: flex;
                     justify-content: space-between;
                     align-items: initial;
@@ -214,7 +214,7 @@
                 img {
                     width: 30%;
                 }
-                .food-info {
+                .foods__info {
                     width: 70%;
                         display:flex;
                         flex-flow: row;
@@ -270,7 +270,7 @@
             padding: 1em;
             border: 2px solid #000;
             border-radius: 1em;
-            .wpp-delivery {
+            &__phones {
                 margin: 0;
                 padding: 0;
                 a {
@@ -288,7 +288,7 @@
         .business-hours {
             width: 80%;
             margin: 0 auto;
-            .title-hours {
+            &__title {
                 width: 90%;
                 display: flex;
                     justify-content: flex-start;
@@ -326,17 +326,17 @@
                 flex-flow: row wrap;
                 justify-content: space-evenly;
             width: 90%;
-            .promos-current {
+            &__current {
                 width: 40%;
-                .promo-2 {
+                .promos__two {
                     img {
                         height: 13em;
                     }
                 }
             }
-            .promo-new {
+            &__new {
                 width: 50%;
-                .promo-3 {
+                .promos__three {
                     h3 {
                         margin-bottom: .5em;
                     }
@@ -348,11 +348,11 @@
     // Contacto
 
     #contacto {
-        .contacto-contenedor {
+        .form-container {
             display: flex;
                 flex-flow: row wrap;
                 align-items: center;
-            .form-title {
+            .form-container__title {
                 width: 100%;
                 margin-bottom: 2em;
                 h1 {
@@ -363,7 +363,7 @@
                     font-weight: 300;
                 }
             }
-            form {
+            .form-container__form {
                 width: 50%;
             }
             img {
@@ -385,7 +385,7 @@
                     display: block;
                     width: 140px;
                 }
-                .logo-container__name {
+                &__name {
                     display:none;
                 }
             }
@@ -402,7 +402,7 @@
                 top: 0;
                 background: none;
                 transition: none;
-                li {
+                &__item {
                     visibility: visible;
                     line-height: 100px;
                     margin: 0 20px;
@@ -416,10 +416,10 @@
                     }
                 }
             }
-            .navbtn-container {
+            .btn-container {
                 display: flex;
                 width: 20%;
-                .nav-btn {
+                &__btn {
                     display: flex;
                     padding: .7em 1em;
                     color: #000;
@@ -437,10 +437,6 @@
         }
     }
 
-    .bg {
-        background: rgba(0, 0, 0, 0.6);
-    }
-
     .scroll {
         box-shadow: 0px -32px 39px 46px rgba(0,0,0,0.52);
         background: $lightblack;
@@ -448,7 +444,7 @@
 
     main {
         .local {
-            .wpp {
+            &__wpp {
                 a:hover {
                     transform: scale(1.2);
                     transition: .5s;
@@ -456,7 +452,7 @@
             }
         }
         .daymenu {
-            .daymenu-img {
+            &__img {
                 .img {
                     display: flex;
                         flex-flow: row;
@@ -521,7 +517,7 @@
                 justify-content: space-between;
             padding: 0;
             width: 60%;
-            .img {
+            &__img {
                 display: flex;
                     flex-flow: column;
                     align-items: initial;
@@ -535,7 +531,7 @@
                     border-top-left-radius: 0;
                     border-bottom-left-radius: 0;
                 }
-                .food-info {
+                .foods__info {
                     display: flex;
                         flex-flow: column;
                         align-items: center;
@@ -572,7 +568,7 @@
     
     #delivery {
         .now {
-            .wpp-delivery {
+            &__phones {
                 a {
                     transform: none;
                     &:active{
@@ -591,15 +587,15 @@
             padding: 0;
         }
         .promos {
-            .promos-current {
-                .promo-1 {
+            &__current {
+                .promos__one {
                     ul {
                         li {
                             font-size: $fsz-small*1.35;
                         }
                     }
                 }
-                .promo-2 {
+                .promos__two {
                     img {
                         height: 15em;
                     }
@@ -611,8 +607,8 @@
     // Contacto
 
     #contacto {
-        .contacto-contenedor {
-            form {
+        .form-container {
+            .form-container__form {
                 input[type="submit"]:active {
                     background: #60c000;
                     transform: scale(.9);
@@ -640,12 +636,12 @@
     
     main {
         .local {
-            .main-info {
+            &__info {
                 p {
                     font-size: $fsz;
                 }
             }
-            .wpp {
+            &__wpp {
                 width: 30%;
                 margin: 0 auto;
                 a {
@@ -654,7 +650,7 @@
             }
         }
         .daymenu {
-            .daymenu-info {
+            &__info {
                 h2 {
                     font-size: $fsz-big*1.25;
                 }
@@ -662,7 +658,7 @@
                     font-size: $fsz-small*1.5;
                 }
             }
-            .daymenu-img {
+            &__img {
                 width: 70%;
             }
         }
@@ -703,7 +699,7 @@
         }
         .foods {
             width: 80%;
-            .img {
+            &__img {
                 margin: 2em;
             }
         }
@@ -731,21 +727,21 @@
             display: flex;
                 justify-content: flex-start;
             width: 90%;
-            .promos-current {
+            &__current {
                 width: 30%;
                 margin-right: 2em;
-                .promo-2 {
+                .promos__two {
                     img {
                         height: 15em;
                     }
                 }
             }
-            .promo-new {
+            &__new {
                 position: absolute;
                     right: -3px;
                 width: 30%;
                 padding: 0;
-                .promo-3 {
+                .promos__three {
                     h3 {
                         font-size: $fsz-big;
                         margin-bottom: 0;
@@ -761,8 +757,8 @@
     // Contacto
 
     #contacto {
-        .contacto-contenedor {
-            form {
+        .form-container {
+            .form-container__form {
                 input[type="text"],
                 input[type="mail"],
                 textarea {
@@ -804,9 +800,9 @@
                 justify-content: space-evenly;
             padding: 0 0em;
             width: 80%;
-            .img {
+            &__img {
                 width: 25%;
-                .food-info {
+                .foods__info {
                     p {
                         margin-bottom: .5em;
                         padding: 0 .1em;
@@ -845,21 +841,21 @@
             font-size: $fsz-big*1.5;
         }
         .promos {
-            .promos-current {
-                .promo-1 {
+            &__current {
+                .promos__one {
                     ul {
                         li {
                             font-size: $fsz-small*1.4;
                         }
                     }
                 }
-                .promo-2 {
+                .promos__two {
                     img {
                         height: 16em;
                     }
                 }
             }
-            .promo-new {
+            &__new {
                 width: 20%;
             }
         }

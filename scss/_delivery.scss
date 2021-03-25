@@ -27,7 +27,7 @@
             font-size: $fsz-small*1.6;
             color: $lightblack;
         }
-        .wpp-delivery {
+        &__phones {
             a {
                 display: flex;
                     align-items: center;
@@ -71,7 +71,7 @@
             flex-flow: column;
             justify-content: center;
             align-items: center;
-        .title-hours {
+        &__title {
             width: 90%;
             display: flex;
                 place-items: center;
@@ -88,6 +88,7 @@
         }
         p {
             margin: 1em 0;
+            text-align: center;
             &:last-of-type {
                 margin: 0;
             }

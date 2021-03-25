@@ -36,9 +36,9 @@
             padding: 1em;
             border-radius: .8em;
         }
-        .promos-current {
+        &__current {
             background: rgba(0,0,0,.1);
-            .promo-1 {
+            .promos__one {
                 ul {
                     border-bottom: 2px solid #ccc;
                     padding: 0;
@@ -55,7 +55,7 @@
                     }
                 }
             }
-            .promo-2 {
+            .promos__two {
                 img {
                     height: 15em;
                     object-fit: cover;
@@ -69,8 +69,8 @@
                 }
             }
         }
-        .promo-new {
-            .promo-3 {
+        &__new {
+            .promos__three {
                 h3 {
                     text-align: center;
                     font-size: $fsz;

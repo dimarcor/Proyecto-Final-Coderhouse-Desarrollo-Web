@@ -11,7 +11,7 @@ main {
         display: flex;
             flex-flow: column;
             justify-content: center;
-        .main-info {
+        &__info {
             display: flex;
                 flex-flow: column;
                 text-align: center;
@@ -30,7 +30,7 @@ main {
                 color: $whitecustom;
             }
         }
-        .wpp {
+        &__wpp {
             width: 80%;
             margin: 0 auto;
             padding-top: 3em;
@@ -52,7 +52,7 @@ main {
     }
     .daymenu {
         padding: 1em;
-        .daymenu-info {
+        &__info {
             display: flex;
                 flex-flow: column;
                 align-items: center;
@@ -71,7 +71,7 @@ main {
                 }
             }
         }
-        .daymenu-img {
+        &__img {
             .img {
                 display: grid;
                     grid-template-columns: 1fr;

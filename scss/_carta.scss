@@ -28,7 +28,7 @@
             justify-content: center;
         width:80%;
         margin:0 auto;
-        .img {
+        &__img {
             display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -41,7 +41,7 @@
                 border-top-left-radius: .8em;
                 border-bottom-left-radius: .8em;
             }
-            .food-info {
+            .foods__info {
                 width: 50%;
                 p {
                     margin-bottom: .5em;

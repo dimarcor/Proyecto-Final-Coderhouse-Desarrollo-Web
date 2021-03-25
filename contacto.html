@@ -14,11 +14,11 @@
     <script src="js/header.js"></script>
 </head>
 <body>
-    <header class="bg">
+    <header>
         <nav>
             <div class="logo-container">
                 <a href="index.html"><img class="logo" src="multimedia/logosmall.png" alt="Logo de El Trébol"></a>
-                <h2 class="logo-name">El Trébol</h2>
+                <h2 class="logo-container__name">El Trébol</h2>
             </div>
             
             <input type="checkbox" id="check">
@@ -27,25 +27,25 @@
             </label>
 
             <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="carta.html">Carta</a></li>
-                <li><a href="delivery.html">Delivery</a></li>
-                <li><a href="promociones.html">Promociones</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li class="nav-list__item"><a href="index.html">Home</a></li>
+                <li class="nav-list__item"><a href="carta.html">Carta</a></li>
+                <li class="nav-list__item"><a href="delivery.html">Delivery</a></li>
+                <li class="nav-list__item"><a href="promociones.html">Promociones</a></li>
+                <li class="nav-list__item"><a href="contacto.html">Contacto</a></li>
             </ul>
 
-            <div class="navbtn-container">
-                <a href="https://www.pedidosya.com.ar" class="nav-btn" target="_blank">Pedí Ya!</a>
+            <div class="btn-container">
+                <a href="https://www.pedidosya.com.ar" class="btn-container__btn" target="_blank">Pedí Ya!</a>
             </div>
         </nav>
     </header>
     <main id="contacto">
-    <div class="contacto-contenedor">
-        <section class="form-title">
+    <div class="form-container">
+        <section class="form-container__title">
             <h1>Contactate con El Trébol</h1>
             <p>¿Alguna duda, sugerencia, inconveniente, etc.? Dejános tu mensaje!</p>
         </section>
-        <form>
+        <form class="form-container__form">
             <input type="text" name="name" id="name" placeholder="Escribí tu nombre" required>
 
             <input type="mail" name="mail" id="mail" placeholder="Escribí tu correo electrónico" required>

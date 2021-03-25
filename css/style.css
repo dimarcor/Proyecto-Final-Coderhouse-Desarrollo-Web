@@ -44,7 +44,7 @@ header {
       padding-left: 1em; }
       header nav .logo-container .logo {
         display: none; }
-      header nav .logo-container .logo-container__name {
+      header nav .logo-container__name {
         font-family: "Shadows Into Light", cursive;
         font-size: 2rem;
         letter-spacing: .2rem;
@@ -70,18 +70,18 @@ header {
       background: #202020;
       text-align: center;
       transition: all .5s; }
-      header nav .nav-list .nav-list__item {
+      header nav .nav-list__item {
         visibility: hidden;
         line-height: 1.8rem;
         margin: 3em 0; }
-        header nav .nav-list .nav-list__item a {
+        header nav .nav-list__item a {
           color: #f1f1f1;
           font-size: 1.2rem;
           text-transform: uppercase;
           text-decoration: none; }
-    header nav .navbtn-container {
+    header nav .btn-container {
       display: none; }
-      header nav .navbtn-container .nav-btn {
+      header nav .btn-container__btn {
         display: none;
         text-decoration: none; }
 
@@ -98,27 +98,27 @@ main {
     display: flex;
     flex-flow: column;
     justify-content: center; }
-    main .local .main-info {
+    main .local__info {
       display: flex;
       flex-flow: column;
       text-align: center;
       width: 90%;
       margin: 0 auto; }
-      main .local .main-info h1 {
+      main .local__info h1 {
         display: flex;
         flex-flow: column;
         margin-bottom: .4em;
         font-size: 3rem;
         line-height: 1em;
         color: #70e000; }
-      main .local .main-info p {
+      main .local__info p {
         font-weight: 600;
         color: #f1f1f1; }
-    main .local .wpp {
+    main .local__wpp {
       width: 80%;
       margin: 0 auto;
       padding-top: 3em; }
-      main .local .wpp a {
+      main .local__wpp a {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -127,27 +127,27 @@ main {
         background-color: #007200;
         color: #f1f1f1;
         border-radius: 1em; }
-        main .local .wpp a img {
+        main .local__wpp a img {
           width: 2.5em;
           height: 2.5em; }
   main .daymenu {
     padding: 1em; }
-    main .daymenu .daymenu-info {
+    main .daymenu__info {
       display: flex;
       flex-flow: column;
       align-items: center; }
-      main .daymenu .daymenu-info h2 {
+      main .daymenu__info h2 {
         margin-bottom: .3em;
         font-size: 2rem; }
-      main .daymenu .daymenu-info p {
+      main .daymenu__info p {
         margin-bottom: 2em;
         font-size: 0.95238rem;
         font-weight: 500;
         text-align: center; }
-        main .daymenu .daymenu-info p span {
+        main .daymenu__info p span {
           font-weight: bold;
           color: #007200; }
-    main .daymenu .daymenu-img .img {
+    main .daymenu__img .img {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: auto auto auto;
@@ -155,11 +155,11 @@ main {
       margin-bottom: 3em;
       border-radius: 1em;
       box-shadow: 0px 8px 24px 5px rgba(0, 0, 0, 0.45); }
-      main .daymenu .daymenu-img .img img {
+      main .daymenu__img .img img {
         width: 100%;
         border-top-left-radius: .8em;
         border-top-right-radius: .8em; }
-      main .daymenu .daymenu-img .img p {
+      main .daymenu__img .img p {
         display: flex;
         flex-flow: column;
         padding: 1em 0;
@@ -218,7 +218,7 @@ footer {
     justify-content: center;
     width: 80%;
     margin: 0 auto; }
-    #carta .foods .img {
+    #carta .foods__img {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -226,20 +226,20 @@ footer {
       margin-bottom: 3em;
       background: #fff;
       box-shadow: 0px 8px 24px 5px rgba(0, 0, 0, 0.45); }
-      #carta .foods .img img {
+      #carta .foods__img img {
         width: 50%;
         border-top-left-radius: .8em;
         border-bottom-left-radius: .8em; }
-      #carta .foods .img .food-info {
+      #carta .foods__img .foods__info {
         width: 50%; }
-        #carta .foods .img .food-info p {
+        #carta .foods__img .foods__info p {
           margin-bottom: .5em;
           padding: 0 .1em;
           font-size: 1.2rem;
           font-weight: 500;
           text-align: center;
           line-height: 1.1em; }
-        #carta .foods .img .food-info .price {
+        #carta .foods__img .foods__info .price {
           margin: none;
           padding: none;
           font-weight: 700;
@@ -275,7 +275,7 @@ footer {
       text-align: center;
       font-size: 1.6rem;
       color: #202020; }
-    #delivery .now .wpp-delivery a {
+    #delivery .now__phones a {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -285,10 +285,10 @@ footer {
       color: #f1f1f1;
       border-radius: 1em;
       font-size: 1rem; }
-      #delivery .now .wpp-delivery a img {
+      #delivery .now__phones a img {
         width: 2.5em;
         height: 2.5em; }
-    #delivery .now .wpp-delivery p {
+    #delivery .now__phones p {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -299,7 +299,7 @@ footer {
       background-color: #70e000;
       color: #000;
       border-radius: 1em; }
-      #delivery .now .wpp-delivery p img {
+      #delivery .now__phones p img {
         width: 2.2em;
         height: 2.2em; }
   #delivery .business-hours {
@@ -312,20 +312,21 @@ footer {
     flex-flow: column;
     justify-content: center;
     align-items: center; }
-    #delivery .business-hours .title-hours {
+    #delivery .business-hours__title {
       width: 90%;
       display: flex;
       place-items: center;
       border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
-      #delivery .business-hours .title-hours img {
+      #delivery .business-hours__title img {
         width: 2em;
         height: 2em; }
-      #delivery .business-hours .title-hours h2 {
+      #delivery .business-hours__title h2 {
         font-size: 1.5rem;
         text-align: center;
         margin-bottom: .5em; }
     #delivery .business-hours p {
-      margin: 1em 0; }
+      margin: 1em 0;
+      text-align: center; }
       #delivery .business-hours p:last-of-type {
         margin: 0; }
 
@@ -360,30 +361,30 @@ footer {
       margin-bottom: 1em;
       padding: 1em;
       border-radius: .8em; }
-    #promociones .promos .promos-current {
+    #promociones .promos__current {
       background: rgba(0, 0, 0, 0.1); }
-      #promociones .promos .promos-current .promo-1 ul {
+      #promociones .promos__current .promos__one ul {
         border-bottom: 2px solid #ccc;
         padding: 0; }
-        #promociones .promos .promos-current .promo-1 ul li {
+        #promociones .promos__current .promos__one ul li {
           margin-bottom: 1em;
           font-size: 1rem;
           font-weight: 600;
           text-align: center; }
-          #promociones .promos .promos-current .promo-1 ul li span {
+          #promociones .promos__current .promos__one ul li span {
             display: block;
             text-align: center;
             font-weight: 300; }
-      #promociones .promos .promos-current .promo-2 img {
+      #promociones .promos__current .promos__two img {
         height: 15em;
         object-fit: cover; }
-      #promociones .promos .promos-current .promo-2 h3 {
+      #promociones .promos__current .promos__two h3 {
         margin: 1em 0;
         padding-bottom: 1em;
         text-align: center;
         font-size: 1.5rem;
         border-bottom: 2px solid #ccc; }
-    #promociones .promos .promo-new .promo-3 h3 {
+    #promociones .promos__new .promos__three h3 {
       text-align: center;
       font-size: 2rem;
       font-weight: 800;
@@ -392,55 +393,55 @@ footer {
       animation-duration: 1s;
       animation-iteration-count: infinite;
       animation-direction: alternate; }
-    #promociones .promos .promo-new .promo-3 .promo-container {
+    #promociones .promos__new .promos__three .promo-container {
       padding: 1em;
       border-radius: .8em;
       background: #202020; }
-    #promociones .promos .promo-new .promo-3 p {
+    #promociones .promos__new .promos__three p {
       color: #f1f1f1; }
 
 footer a {
   text-decoration: none; }
 
-#contacto .contacto-contenedor {
+#contacto .form-container {
   width: 90%;
   margin: 0 auto;
   padding: 5em 0 1em; }
-  #contacto .contacto-contenedor .form-title {
+  #contacto .form-container .form-container__title {
     text-align: center; }
-    #contacto .contacto-contenedor .form-title h1 {
+    #contacto .form-container .form-container__title h1 {
       font-size: 2.5rem;
       font-weight: 800; }
-  #contacto .contacto-contenedor form {
+  #contacto .form-container .form-container__form {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 80%;
     margin: 1em auto; }
-    #contacto .contacto-contenedor form input, #contacto .contacto-contenedor form select, #contacto .contacto-contenedor form textarea {
+    #contacto .form-container .form-container__form input, #contacto .form-container .form-container__form select, #contacto .form-container .form-container__form textarea {
       width: 100%;
       margin-bottom: 2em;
       font-family: inherit; }
-    #contacto .contacto-contenedor form input[type="text"],
-    #contacto .contacto-contenedor form input[type="mail"],
-    #contacto .contacto-contenedor form textarea {
+    #contacto .form-container .form-container__form input[type="text"],
+    #contacto .form-container .form-container__form input[type="mail"],
+    #contacto .form-container .form-container__form textarea {
       padding: 1em 1em .5em 0;
       background: none;
       border: none;
       border-bottom: 1px solid #70e000;
       text-align: left;
       font-size: 0.90909rem; }
-    #contacto .contacto-contenedor form select {
+    #contacto .form-container .form-container__form select {
       padding: .5em;
       background: none;
       border: 1px solid #70e000; }
-      #contacto .contacto-contenedor form select option {
+      #contacto .form-container .form-container__form select option {
         text-align: center; }
-    #contacto .contacto-contenedor form textarea {
+    #contacto .form-container .form-container__form textarea {
       resize: none;
       width: 100%;
       height: 3em; }
-    #contacto .contacto-contenedor form input[type="submit"] {
+    #contacto .form-container .form-container__form input[type="submit"] {
       width: 50%;
       padding: .7em 1em;
       font-size: 1.2rem;
@@ -449,13 +450,13 @@ footer a {
       background: #70e000;
       border: none;
       cursor: pointer; }
-  #contacto .contacto-contenedor img {
+  #contacto .form-container img {
     display: block;
     width: 40%;
     margin: 0 auto; }
 
 @media only screen and (min-width: 425px) {
-  main .local .main-info h1 {
+  main .local__info h1 {
     font-size: 3.45rem; }
   #carta .carta-info h1 {
     font-size: 3rem; }
@@ -464,25 +465,25 @@ footer a {
   #delivery .now {
     width: 80%;
     margin: 0 auto; }
-    #delivery .now .wpp-delivery a {
+    #delivery .now__phones a {
       font-size: 1rem; }
-    #delivery .now .wpp-delivery p img {
+    #delivery .now__phones p img {
       width: 2em;
       height: 2em; }
   #delivery .business-hours {
     padding: 1em; }
     #delivery .business-hours p {
       font-size: 1.2rem; }
-    #delivery .business-hours .title-hours {
+    #delivery .business-hours__title {
       width: 90%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
-      #delivery .business-hours .title-hours img {
+      #delivery .business-hours__title img {
         width: 2.2em;
         height: 2.2em; }
-      #delivery .business-hours .title-hours h2 {
+      #delivery .business-hours__title h2 {
         font-size: 1.6rem; }
   #promociones .promos {
     width: 60%; }
@@ -491,31 +492,31 @@ footer a {
     #promociones .promos p {
       margin-top: .6em;
       font-size: 1.8rem; }
-    #promociones .promos .promos-current .promo-1 ul li {
+    #promociones .promos__current .promos__one ul li {
       font-size: 1.2rem; } }
 
 @media only screen and (min-width: 768px) {
-  main .local .main-info h1 {
+  main .local__info h1 {
     display: block;
     font-size: 4.5rem; }
-  main .local .main-info p {
+  main .local__info p {
     font-size: 1.7rem; }
-  main .local .wpp {
+  main .local__wpp {
     width: 40%; }
-    main .local .wpp a {
+    main .local__wpp a {
       font-size: 1.2rem; }
   main .daymenu {
     width: 90%;
     margin: 0 auto; }
-    main .daymenu .daymenu-info h2 {
+    main .daymenu__info h2 {
       font-size: 3rem; }
-    main .daymenu .daymenu-info p {
+    main .daymenu__info p {
       font-size: 1.5rem;
       font-weight: 400; }
-    main .daymenu .daymenu-img {
+    main .daymenu__img {
       margin: 0 auto;
       width: 60%; }
-      main .daymenu .daymenu-img .img p {
+      main .daymenu__img .img p {
         font-size: 1.7rem;
         font-weight: 400; }
   footer {
@@ -572,26 +573,26 @@ footer a {
     flex-flow: row wrap;
     width: 100%;
     padding: 0 8em; }
-    #carta .foods .img {
+    #carta .foods__img {
       display: flex;
       justify-content: space-between;
       align-items: initial;
       border-radius: .8em; }
-      #carta .foods .img img {
+      #carta .foods__img img {
         width: 30%; }
-      #carta .foods .img .food-info {
+      #carta .foods__img .foods__info {
         width: 70%;
         display: flex;
         flex-flow: row;
         justify-content: space-between;
         align-items: center;
         padding: 1em; }
-        #carta .foods .img .food-info p {
+        #carta .foods__img .foods__info p {
           font-size: 1.5rem;
           font-weight: 600;
           line-height: 1.3em;
           text-align: left; }
-        #carta .foods .img .food-info .price {
+        #carta .foods__img .foods__info .price {
           font-size: 2rem;
           margin-left: .5em; }
   #delivery .title-container {
@@ -621,27 +622,27 @@ footer a {
     padding: 1em;
     border: 2px solid #000;
     border-radius: 1em; }
-    #delivery .now .wpp-delivery {
+    #delivery .now__phones {
       margin: 0;
       padding: 0; }
-      #delivery .now .wpp-delivery a {
+      #delivery .now__phones a {
         text-align: right;
         font-size: 1rem; }
-      #delivery .now .wpp-delivery img {
+      #delivery .now__phones img {
         font-size: 1rem; }
-      #delivery .now .wpp-delivery p {
+      #delivery .now__phones p {
         margin-bottom: 0; }
   #delivery .business-hours {
     width: 80%;
     margin: 0 auto; }
-    #delivery .business-hours .title-hours {
+    #delivery .business-hours__title {
       width: 90%;
       display: flex;
       justify-content: flex-start;
       border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
-      #delivery .business-hours .title-hours img {
+      #delivery .business-hours__title img {
         margin: 0 1em .5em 0; }
-      #delivery .business-hours .title-hours h2 {
+      #delivery .business-hours__title h2 {
         text-align: center;
         margin-bottom: .5em; }
     #delivery .business-hours p {
@@ -657,29 +658,29 @@ footer a {
     flex-flow: row wrap;
     justify-content: space-evenly;
     width: 90%; }
-    #promociones .promos .promos-current {
+    #promociones .promos__current {
       width: 40%; }
-      #promociones .promos .promos-current .promo-2 img {
+      #promociones .promos__current .promos__two img {
         height: 13em; }
-    #promociones .promos .promo-new {
+    #promociones .promos__new {
       width: 50%; }
-      #promociones .promos .promo-new .promo-3 h3 {
+      #promociones .promos__new .promos__three h3 {
         margin-bottom: .5em; }
-  #contacto .contacto-contenedor {
+  #contacto .form-container {
     display: flex;
     flex-flow: row wrap;
     align-items: center; }
-    #contacto .contacto-contenedor .form-title {
+    #contacto .form-container .form-container__title {
       width: 100%;
       margin-bottom: 2em; }
-      #contacto .contacto-contenedor .form-title h1 {
+      #contacto .form-container .form-container__title h1 {
         font-size: 3rem; }
-      #contacto .contacto-contenedor .form-title p {
+      #contacto .form-container .form-container__title p {
         font-size: 1.2rem;
         font-weight: 300; }
-    #contacto .contacto-contenedor form {
+    #contacto .form-container .form-container__form {
       width: 50%; }
-    #contacto .contacto-contenedor img {
+    #contacto .form-container img {
       width: 25%;
       height: 25%; } }
 
@@ -692,7 +693,7 @@ footer a {
       header nav .logo-container .logo {
         display: block;
         width: 140px; }
-      header nav .logo-container .logo-container__name {
+      header nav .logo-container__name {
         display: none; }
       header nav .hamburger-btn {
         display: none; }
@@ -706,20 +707,20 @@ footer a {
         top: 0;
         background: none;
         transition: none; }
-        header nav .nav-list li {
+        header nav .nav-list__item {
           visibility: visible;
           line-height: 100px;
           margin: 0 20px;
           transition: none; }
-          header nav .nav-list li a {
+          header nav .nav-list__item a {
             font-size: 1rem; }
-            header nav .nav-list li a:hover {
+            header nav .nav-list__item a:hover {
               color: #70e000;
               transition: .3s; }
-      header nav .navbtn-container {
+      header nav .btn-container {
         display: flex;
         width: 20%; }
-        header nav .navbtn-container .nav-btn {
+        header nav .btn-container__btn {
           display: flex;
           padding: .7em 1em;
           color: #000;
@@ -727,19 +728,17 @@ footer a {
           font-weight: 700;
           background-color: #70e000;
           border-radius: 1em; }
-          header nav .navbtn-container .nav-btn:hover {
+          header nav .btn-container__btn:hover {
             background: #70e000;
             box-shadow: 0 0 10px #70e000, 0 0 30px #70e000, 0 0 20px #70e000;
             transition: .3s; }
-  .bg {
-    background: rgba(0, 0, 0, 0.6); }
   .scroll {
     box-shadow: 0px -32px 39px 46px rgba(0, 0, 0, 0.52);
     background: #202020; }
-  main .local .wpp a:hover {
+  main .local__wpp a:hover {
     transform: scale(1.2);
     transition: .5s; }
-  main .daymenu .daymenu-img .img {
+  main .daymenu__img .img {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
@@ -748,18 +747,18 @@ footer a {
     margin-bottom: 3em;
     border: none;
     border-radius: 1em; }
-    main .daymenu .daymenu-img .img:hover {
+    main .daymenu__img .img:hover {
       transition: all .4s;
       background: #007200;
       color: #f1f1f1; }
-    main .daymenu .daymenu-img .img p {
+    main .daymenu__img .img p {
       width: 70%;
       padding: 0;
       text-align: center;
       font-weight: 500;
       font-size: 1.7rem;
       color: inherit; }
-    main .daymenu .daymenu-img .img img {
+    main .daymenu__img .img img {
       width: 30%;
       border: none;
       border-bottom-left-radius: 1em;
@@ -782,31 +781,31 @@ footer a {
     justify-content: space-between;
     padding: 0;
     width: 60%; }
-    #carta .foods .img {
+    #carta .foods__img {
       display: flex;
       flex-flow: column;
       align-items: initial;
       width: 40%; }
-      #carta .foods .img:hover {
+      #carta .foods__img:hover {
         transform: scale(1.1);
         transition: .2s; }
-      #carta .foods .img img {
+      #carta .foods__img img {
         width: 100%;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0; }
-      #carta .foods .img .food-info {
+      #carta .foods__img .foods__info {
         display: flex;
         flex-flow: column;
         align-items: center;
         width: 100%; }
-        #carta .foods .img .food-info p {
+        #carta .foods__img .foods__info p {
           margin-bottom: .5em;
           padding: 0 .1em;
           font-size: 1.8rem;
           font-weight: 600;
           line-height: 1.1em;
           text-align: center; }
-        #carta .foods .img .food-info .price {
+        #carta .foods__img .foods__info .price {
           margin: 0;
           padding: 0;
           font-weight: 700;
@@ -817,18 +816,18 @@ footer a {
     text-align: center;
     font-weight: 400;
     font-size: 1.7rem; }
-  #delivery .now .wpp-delivery a {
+  #delivery .now__phones a {
     transform: none; }
-    #delivery .now .wpp-delivery a:active {
+    #delivery .now__phones a:active {
       background: #004400;
       transition: background .3s; }
   #promociones .promo-image {
     padding: 0; }
-  #promociones .promos .promos-current .promo-1 ul li {
+  #promociones .promos__current .promos__one ul li {
     font-size: 1.35rem; }
-  #promociones .promos .promos-current .promo-2 img {
+  #promociones .promos__current .promos__two img {
     height: 15em; }
-  #contacto .contacto-contenedor form input[type="submit"]:active {
+  #contacto .form-container .form-container__form input[type="submit"]:active {
     background: #60c000;
     transform: scale(0.9);
     transition: all .1s; } }
@@ -836,18 +835,18 @@ footer a {
 @media only screen and (min-width: 1024px) {
   header nav .nav-list li a {
     font-size: 1.2rem; }
-  main .local .main-info p {
+  main .local__info p {
     font-size: 2rem; }
-  main .local .wpp {
+  main .local__wpp {
     width: 30%;
     margin: 0 auto; }
-    main .local .wpp a {
+    main .local__wpp a {
       font-size: 1.3rem; }
-  main .daymenu .daymenu-info h2 {
+  main .daymenu__info h2 {
     font-size: 3.75rem; }
-  main .daymenu .daymenu-info p {
+  main .daymenu__info p {
     font-size: 1.5rem; }
-  main .daymenu .daymenu-img {
+  main .daymenu__img {
     width: 70%; }
   footer {
     font-size: 1.4rem; }
@@ -873,7 +872,7 @@ footer a {
         font-weight: 400; }
     #carta .foods {
       width: 80%; }
-      #carta .foods .img {
+      #carta .foods__img {
         margin: 2em; }
   #delivery .soon .title-container h1 {
     font-size: 4.5rem; }
@@ -883,28 +882,28 @@ footer a {
     display: flex;
     justify-content: flex-start;
     width: 90%; }
-    #promociones .promos .promos-current {
+    #promociones .promos__current {
       width: 30%;
       margin-right: 2em; }
-      #promociones .promos .promos-current .promo-2 img {
+      #promociones .promos__current .promos__two img {
         height: 15em; }
-    #promociones .promos .promo-new {
+    #promociones .promos__new {
       position: absolute;
       right: -3px;
       width: 30%;
       padding: 0; }
-      #promociones .promos .promo-new .promo-3 h3 {
+      #promociones .promos__new .promos__three h3 {
         font-size: 3rem;
         margin-bottom: 0; }
-      #promociones .promos .promo-new .promo-3 .promo-container {
+      #promociones .promos__new .promos__three .promo-container {
         border-radius: .8em 0 0 .8em; }
-  #contacto .contacto-contenedor form input[type="text"],
-  #contacto .contacto-contenedor form input[type="mail"],
-  #contacto .contacto-contenedor form textarea {
+  #contacto .form-container .form-container__form input[type="text"],
+  #contacto .form-container .form-container__form input[type="mail"],
+  #contacto .form-container .form-container__form textarea {
     font-size: 1.3rem; }
-  #contacto .contacto-contenedor form select {
+  #contacto .form-container .form-container__form select {
     font-size: 1.3rem; }
-  #contacto .contacto-contenedor img {
+  #contacto .form-container img {
     width: 20%; } }
 
 @media only screen and (min-width: 1280px) {
@@ -924,16 +923,16 @@ footer a {
     justify-content: space-evenly;
     padding: 0 0em;
     width: 80%; }
-    #carta .foods .img {
+    #carta .foods__img {
       width: 25%; }
-      #carta .foods .img .food-info p {
+      #carta .foods__img .foods__info p {
         margin-bottom: .5em;
         padding: 0 .1em;
         font-size: 2rem;
         font-weight: 500;
         text-align: center;
         line-height: 1.1em; }
-      #carta .foods .img .food-info .price {
+      #carta .foods__img .foods__info .price {
         margin: none;
         padding: none;
         font-size: 3rem;
@@ -949,9 +948,9 @@ footer a {
     text-align: left;
     padding-left: 2em;
     font-size: 4.5rem; }
-  #promociones .promos .promos-current .promo-1 ul li {
+  #promociones .promos__current .promos__one ul li {
     font-size: 1.4rem; }
-  #promociones .promos .promos-current .promo-2 img {
+  #promociones .promos__current .promos__two img {
     height: 16em; }
-  #promociones .promos .promo-new {
+  #promociones .promos__new {
     width: 20%; } }
