@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <title>El Trébol Resto Bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/header.js"></script>
 </head>
@@ -18,7 +19,7 @@
         <nav>
             <div class="logo-container">
                 <a href="index.html"><img class="logo" src="multimedia/logosmall.png" alt="Logo de El Trébol"></a>
-                <h2 class="logo-container__name">El Trébol</h2>
+                <a href="index.html"><h2 class="logo-container__name">El Trébol</h2></a>
             </div>
             
             <input type="checkbox" id="check">
@@ -56,15 +57,15 @@
                 <p>Cada día ofrecemos 3 platos a un precio de <span>$350</span>, estos son los de hoy:</p>
             </div>
             <div class="daymenu__img">
-                <article class="img">
+                <article class="img wow animate__animated animate__fadeInLeft">
                     <img src="multimedia/food/pecrus.jpeg" alt="Milanesas de Peceto con Papas Rústicas">
                     <p>Milanesas de peceto <span>c/Papas rústicas</span></p>
                 </article>
-                <article class="img">
+                <article class="img wow animate__animated animate__fadeInRight">
                     <img src="multimedia/food/pastelpapa.jpeg" alt="Pastel de Papa">
                     <p>Pastel de Papa</p>
                 </article>
-                <article class="img">
+                <article class="img wow animate__animated animate__fadeInLeft">
                     <img src="multimedia/food/fideos.jpeg" alt="Fideos caseros al huevo c/Estofado">
                     <p>Fideos al huevo c/Estofado</p>
                 </article>
@@ -92,5 +93,9 @@
             <a href="#">Instagram</a>
         </div>
     </footer>
+    <script src="https://wowjs.uk/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>

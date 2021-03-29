@@ -340,7 +340,7 @@
                 width: 40%;
                 .promos__two {
                     img {
-                        height: 13em;
+                        height: 10em;
                     }
                 }
             }
@@ -615,7 +615,14 @@
             padding: 0;
         }
         .promos {
+            display: flex;
+                flex-flow: row nowrap;
+            justify-content: center;
+            margin: 0;
+            width: 100%;
             &__current {
+                width: 30%;
+                margin-right: 2em;
                 .promos__one {
                     ul {
                         li {
@@ -625,9 +632,14 @@
                 }
                 .promos__two {
                     img {
-                        height: 15em;
+                        height: 12em;
                     }
                 }
+            }
+            &__new {
+                display: flex;
+                    justify-content: flex-end;
+                width: 30%;
             }
         }
     }
@@ -752,30 +764,15 @@
             font-size: $fsz-big*1.1;
         }
         .promos {
-            display: flex;
-                justify-content: flex-start;
-            width: 90%;
             &__current {
                 width: 30%;
-                margin-right: 2em;
-                .promos__two {
-                    img {
-                        height: 15em;
-                    }
-                }
             }
             &__new {
-                position: absolute;
-                    right: -3px;
-                width: 30%;
-                padding: 0;
+                width: 29%;
                 .promos__three {
                     h3 {
                         font-size: $fsz-big;
                         margin-bottom: 0;
-                    }
-                    .promo-container {
-                        border-radius: .8em 0 0 .8em;
                     }
                 }
             }
@@ -881,18 +878,15 @@
                 .promos__one {
                     ul {
                         li {
-                            font-size: $fsz-small*1.4;
+                            font-size: $fsz-small*1.7;
                         }
                     }
                 }
                 .promos__two {
                     img {
-                        height: 16em;
+                        height: 18em;
                     }
                 }
-            }
-            &__new {
-                width: 20%;
             }
         }
     }

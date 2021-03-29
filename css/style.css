@@ -1,11 +1,3 @@
-@keyframes promo-new {
-  0% {
-    color: red; }
-  50% {
-    color: green; }
-  100% {
-    color: blue; } }
-
 @keyframes red_social {
   0% {
     transform: rotate(0turn); }
@@ -44,11 +36,15 @@ header {
       padding-left: 1em; }
       header nav .logo-container .logo {
         display: none; }
-      header nav .logo-container__name {
+      header nav .logo-container a {
+        text-decoration: none; }
+      header nav .logo-container .logo-container__name {
         font-family: "Shadows Into Light", cursive;
         font-size: 2rem;
+        font-weight: 700;
         letter-spacing: .2rem;
-        color: #f1f1f1; }
+        color: #f1f1f1;
+        margin-bottom: 0; }
     header nav #check {
       display: none; }
       header nav #check:checked ~ .nav-list {
@@ -396,14 +392,11 @@ footer {
         font-size: 1.5rem;
         border-bottom: 2px solid #ccc; }
     #promociones .promos__new .promos__three h3 {
+      position: relative;
       text-align: center;
       font-size: 2rem;
       font-weight: 800;
-      color: #202020;
-      animation-name: promo-new;
-      animation-duration: 1s;
-      animation-iteration-count: infinite;
-      animation-direction: alternate; }
+      color: #70e000; }
     #promociones .promos__new .promos__three .promo-container {
       padding: 1em;
       border-radius: .8em;
@@ -705,7 +698,7 @@ footer a {
     #promociones .promos__current {
       width: 40%; }
       #promociones .promos__current .promos__two img {
-        height: 13em; }
+        height: 10em; }
     #promociones .promos__new {
       width: 50%; }
       #promociones .promos__new .promos__three h3 {
@@ -872,10 +865,23 @@ footer a {
       transition: background .3s; }
   #promociones .promo-image {
     padding: 0; }
-  #promociones .promos__current .promos__one ul li {
-    font-size: 1.35rem; }
-  #promociones .promos__current .promos__two img {
-    height: 15em; }
+  #promociones .promos {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 0;
+    width: 100%; }
+    #promociones .promos__current {
+      width: 30%;
+      margin-right: 2em; }
+      #promociones .promos__current .promos__one ul li {
+        font-size: 1.35rem; }
+      #promociones .promos__current .promos__two img {
+        height: 12em; }
+    #promociones .promos__new {
+      display: flex;
+      justify-content: flex-end;
+      width: 30%; }
   #contacto .form-container .form-container__form input[type="submit"]:active {
     background: #60c000;
     transform: scale(0.9);
@@ -927,25 +933,13 @@ footer a {
     font-size: 4.5rem; }
   #promociones h1 {
     font-size: 3.3rem; }
-  #promociones .promos {
-    display: flex;
-    justify-content: flex-start;
-    width: 90%; }
-    #promociones .promos__current {
-      width: 30%;
-      margin-right: 2em; }
-      #promociones .promos__current .promos__two img {
-        height: 15em; }
-    #promociones .promos__new {
-      position: absolute;
-      right: -3px;
-      width: 30%;
-      padding: 0; }
-      #promociones .promos__new .promos__three h3 {
-        font-size: 3rem;
-        margin-bottom: 0; }
-      #promociones .promos__new .promos__three .promo-container {
-        border-radius: .8em 0 0 .8em; }
+  #promociones .promos__current {
+    width: 30%; }
+  #promociones .promos__new {
+    width: 29%; }
+    #promociones .promos__new .promos__three h3 {
+      font-size: 3rem;
+      margin-bottom: 0; }
   #contacto .form-container .form-container__form input[type="text"],
   #contacto .form-container .form-container__form input[type="mail"],
   #contacto .form-container .form-container__form textarea {
@@ -1000,8 +994,6 @@ footer a {
     padding-left: 2em;
     font-size: 4.5rem; }
   #promociones .promos__current .promos__one ul li {
-    font-size: 1.4rem; }
+    font-size: 1.7rem; }
   #promociones .promos__current .promos__two img {
-    height: 16em; }
-  #promociones .promos__new {
-    width: 20%; } }
+    height: 18em; } }

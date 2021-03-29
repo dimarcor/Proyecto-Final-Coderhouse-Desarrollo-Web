@@ -18,11 +18,16 @@ header {
             .logo {
             display: none;
             }
-            &__name {
+            a {
+                text-decoration: none;
+            }
+            .logo-container__name {
             font-family: $ff-secondary;
             font-size: $fsz;
+            font-weight: 700;
             letter-spacing: .2rem;
             color: $whitecustom;
+            margin-bottom: 0;
             }
         }
         #check {

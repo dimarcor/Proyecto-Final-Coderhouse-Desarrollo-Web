@@ -72,14 +72,11 @@
         &__new {
             .promos__three {
                 h3 {
+                    position: relative;
                     text-align: center;
                     font-size: $fsz;
                     font-weight: 800;
-                    color: $lightblack;
-                    animation-name: promo-new;
-                    animation-duration: 1s;
-                    animation-iteration-count: infinite;
-                    animation-direction: alternate;
+                    color: $lightgreen;
                 }
                 .promo-container {
                     padding: 1em;
