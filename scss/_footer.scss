@@ -36,11 +36,15 @@ footer {
     }
     .social {
         display: flex;
-            justify-content: space-around;
+            justify-content: center;
+            align-items: center;
         width: 100%;
         a {
-            font-size: $fsz-small;
+            margin: 1em;
             color: $lightgold;
+            i {
+                font-size: $fsz;
+            }
         }
     }
 }

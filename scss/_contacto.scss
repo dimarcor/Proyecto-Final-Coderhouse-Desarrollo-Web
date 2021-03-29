@@ -2,7 +2,7 @@
     .form-container {
         width: 90%;
         margin: 0 auto;
-        padding: 5em 0 1em;
+        padding: 6em 0 1em;
         .form-container__title {
             text-align: center;
             h1 {
@@ -24,6 +24,7 @@
             input[type="text"],
             input[type="mail"],
             textarea {
+                overflow: hidden;
                 padding: 1em 1em .5em 0;
                 background: none;
                 border: none;

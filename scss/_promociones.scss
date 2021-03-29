@@ -34,10 +34,10 @@
         article {
             margin-bottom: 1em;
             padding: 1em;
-            border-radius: .8em;
         }
         &__current {
             background: rgba(0,0,0,.1);
+            box-shadow: $food-shadow;
             .promos__one {
                 ul {
                     border-bottom: 2px solid #ccc;
@@ -79,8 +79,8 @@
                     color: $lightgreen;
                 }
                 .promo-container {
+                    box-shadow: $food-shadow;
                     padding: 1em;
-                    border-radius: .8em;
                     background: $lightblack;
                     }
                     p {

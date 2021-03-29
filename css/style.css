@@ -63,7 +63,8 @@ header {
       width: 100%;
       height: 0vh;
       top: 64px;
-      background: #202020;
+      margin-bottom: 0;
+      background: #111111;
       text-align: center;
       transition: all .5s; }
       header nav .nav-list__item {
@@ -117,15 +118,17 @@ main {
       main .local__wpp a {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         padding: .7em 1em;
+        margin: .25em;
         text-decoration: none;
         background-color: #007200;
         color: #f1f1f1;
         border-radius: 1em; }
         main .local__wpp a img {
           width: 2.5em;
-          height: 2.5em; }
+          height: 2.5em;
+          margin: .25em; }
   main .daymenu {
     padding: 1em; }
     main .daymenu__info {
@@ -171,7 +174,7 @@ footer {
   width: 100%;
   padding: 1em;
   text-align: center;
-  background: #202020; }
+  background: #111111; }
   footer .info h5 {
     margin-bottom: 1em;
     font-size: 1rem;
@@ -193,11 +196,14 @@ footer {
         font-size: 1.1rem; }
   footer .social {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     width: 100%; }
     footer .social a {
-      font-size: 1rem;
+      margin: 1em;
       color: #DDA15E; }
+      footer .social a i {
+        font-size: 2rem; }
 
 #carta {
   width: 100%;
@@ -281,7 +287,7 @@ footer {
     #delivery .now p {
       text-align: center;
       font-size: 1.6rem;
-      color: #202020; }
+      color: #111111; }
     #delivery .now__phones a {
       display: flex;
       align-items: center;
@@ -366,10 +372,10 @@ footer {
       text-align: center; }
     #promociones .promos article {
       margin-bottom: 1em;
-      padding: 1em;
-      border-radius: .8em; }
+      padding: 1em; }
     #promociones .promos__current {
-      background: rgba(0, 0, 0, 0.1); }
+      background: rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 8px 24px 5px rgba(0, 0, 0, 0.45); }
       #promociones .promos__current .promos__one ul {
         border-bottom: 2px solid #ccc;
         padding: 0; }
@@ -398,9 +404,9 @@ footer {
       font-weight: 800;
       color: #70e000; }
     #promociones .promos__new .promos__three .promo-container {
+      box-shadow: 0px 8px 24px 5px rgba(0, 0, 0, 0.45);
       padding: 1em;
-      border-radius: .8em;
-      background: #202020; }
+      background: #111111; }
     #promociones .promos__new .promos__three p {
       color: #f1f1f1; }
 
@@ -410,7 +416,7 @@ footer a {
 #contacto .form-container {
   width: 90%;
   margin: 0 auto;
-  padding: 5em 0 1em; }
+  padding: 6em 0 1em; }
   #contacto .form-container .form-container__title {
     text-align: center; }
     #contacto .form-container .form-container__title h1 {
@@ -429,6 +435,7 @@ footer a {
     #contacto .form-container .form-container__form input[type="text"],
     #contacto .form-container .form-container__form input[type="mail"],
     #contacto .form-container .form-container__form textarea {
+      overflow: hidden;
       padding: 1em 1em .5em 0;
       background: none;
       border: none;
@@ -576,16 +583,6 @@ footer a {
       margin-bottom: 2em; }
       footer .site-map__nav li a {
         font-size: 1.5rem; }
-    footer .social {
-      display: flex;
-      flex-flow: row;
-      justify-content: center;
-      width: 100%; }
-      footer .social a {
-        margin: 0 1em 2em;
-        font-size: 1.5rem; }
-        footer .social a:last-of-type {
-          margin: 0; }
   #carta h2 {
     text-align: center;
     font-size: 3.6rem; }
@@ -773,7 +770,9 @@ footer a {
             transition: .3s; }
   .scroll {
     box-shadow: 0px -32px 39px 46px rgba(0, 0, 0, 0.52);
-    background: #202020; }
+    background: #111111; }
+  main .local__wpp a {
+    font-size: 1.4rem; }
   main .local__wpp a:hover {
     transform: scale(1.2);
     transition: .5s; }
@@ -805,9 +804,11 @@ footer a {
   footer .site-map__nav li a:hover {
     color: #70e000;
     transition: all .3s; }
+  footer .social a i {
+    font-size: 3rem; }
   footer .social a:hover {
     animation-name: red_social;
-    animation-duration: 1s; }
+    animation-duration: 1.5s; }
   #carta h2 {
     font-size: 3rem; }
   #carta .carta-info {
@@ -878,14 +879,22 @@ footer a {
         font-size: 1.35rem; }
       #promociones .promos__current .promos__two img {
         height: 12em; }
+    #promociones .promos__current:hover {
+      transform: scale(1.03);
+      transition: transform .3s; }
     #promociones .promos__new {
       display: flex;
       justify-content: flex-end;
       width: 30%; }
-  #contacto .form-container .form-container__form input[type="submit"]:active {
-    background: #60c000;
-    transform: scale(0.9);
-    transition: all .1s; } }
+      #promociones .promos__new .promo-container:hover {
+        transform: scale(1.03);
+        transition: transform .3s; }
+  #contacto .form-container {
+    padding-top: 8em; }
+    #contacto .form-container .form-container__form input[type="submit"]:active {
+      background: #60c000;
+      transform: scale(0.9);
+      transition: all .1s; } }
 
 @media only screen and (min-width: 1024px) {
   header nav .nav-list li a {
@@ -893,10 +902,9 @@ footer a {
   main .local__info p {
     font-size: 2rem; }
   main .local__wpp {
-    width: 30%;
     margin: 0 auto; }
     main .local__wpp a {
-      font-size: 1.3rem; }
+      font-size: 1.6rem; }
   main .daymenu__info h2 {
     font-size: 3.75rem; }
   main .daymenu__info p {
@@ -952,6 +960,8 @@ footer a {
     width: 15%; } }
 
 @media only screen and (min-width: 1280px) {
+  main .local__wpp {
+    width: 32%; }
   #carta h2 {
     text-align: center;
     font-size: 3rem; }

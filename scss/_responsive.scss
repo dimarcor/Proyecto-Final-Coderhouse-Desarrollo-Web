@@ -168,19 +168,6 @@
                 }
             }
         }
-        .social {
-            display: flex;
-                flex-flow: row;
-                justify-content: center;
-            width: 100%;
-            a {
-                margin: 0 1em 2em;
-                font-size: $fsz-small*1.5;
-                &:last-of-type {
-                    margin: 0;
-                }
-            }
-        }
     }
 
     // Carta
@@ -463,6 +450,9 @@
     main {
         .local {
             &__wpp {
+                a {
+                    font-size: $fsz-small*1.4;
+                }
                 a:hover {
                     transform: scale(1.2);
                     transition: .5s;
@@ -516,9 +506,14 @@
             }
         }
         .social {
+            a {
+                i {
+                    font-size: $fsz-big;
+                }
+            }
             a:hover{
                     animation-name: red_social;
-                    animation-duration: 1s;
+                    animation-duration: 1.5s;
                 }
             }
         }
@@ -636,10 +631,18 @@
                     }
                 }
             }
+            &__current:hover {
+                transform: scale(1.03);
+                transition: transform .3s;
+            }
             &__new {
                 display: flex;
                     justify-content: flex-end;
                 width: 30%;
+                .promo-container:hover {
+                    transform: scale(1.03);
+                    transition: transform .3s;
+                }
             }
         }
     }
@@ -648,6 +651,7 @@
 
     #contacto {
         .form-container {
+            padding-top: 8em;
             .form-container__form {
                 input[type="submit"]:active {
                     background: #60c000;
@@ -682,10 +686,9 @@
                 }
             }
             &__wpp {
-                width: 30%;
                 margin: 0 auto;
                 a {
-                    font-size: $fsz-small*1.3;
+                    font-size: $fsz-small*1.6;
                 }
             }
         }
@@ -810,6 +813,14 @@
 
 @media only screen and (min-width:1280px) {
 
+    main {
+        .local {
+            &__wpp {
+                width: 32%;
+            }
+        }
+    }
+    
     // Carta
 
     #carta {

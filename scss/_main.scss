@@ -37,8 +37,9 @@ main {
             a {
                 display: flex;
                     align-items: center;
-                    justify-content: space-between;
+                    justify-content: center;
                 padding: .7em 1em;
+                margin: .25em;
                 text-decoration: none;
                 background-color: $darkgreen;
                 color: $whitecustom;
@@ -46,6 +47,7 @@ main {
                 img {
                     width: 2.5em;
                     height: 2.5em;
+                    margin: .25em;
                 }
             }
         }
