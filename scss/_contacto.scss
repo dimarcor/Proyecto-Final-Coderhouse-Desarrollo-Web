@@ -1,5 +1,9 @@
 #contacto {
     .form-container {
+        display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
         width: 90%;
         margin: 0 auto;
         padding: 6em 0 1em;
@@ -56,8 +60,7 @@
                 cursor: pointer;
             }
         }
-        img {
-            display: block;
+        embed {
             width: 40%;
             margin: 0 auto;
         }

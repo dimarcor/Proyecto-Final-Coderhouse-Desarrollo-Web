@@ -408,6 +408,10 @@ footer a {
   text-decoration: none; }
 
 #contacto .form-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
   width: 90%;
   margin: 0 auto;
   padding: 6em 0 1em; }
@@ -455,8 +459,7 @@ footer a {
       background: #70e000;
       border: none;
       cursor: pointer; }
-  #contacto .form-container img {
-    display: block;
+  #contacto .form-container embed {
     width: 40%;
     margin: 0 auto; }
 
@@ -694,9 +697,7 @@ footer a {
       #promociones .promos__new .promos__three h3 {
         margin-bottom: .5em; }
   #contacto .form-container {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center; }
+    flex-flow: row wrap; }
     #contacto .form-container .form-container__title {
       width: 100%;
       margin-bottom: 2em; }
@@ -707,7 +708,7 @@ footer a {
         font-weight: 300; }
     #contacto .form-container .form-container__form {
       width: 50%; }
-    #contacto .form-container img {
+    #contacto .form-container embed {
       width: 25%;
       height: 25%; }
   .error img {
@@ -948,8 +949,6 @@ footer a {
     font-size: 1.3rem; }
   #contacto .form-container .form-container__form select {
     font-size: 1.3rem; }
-  #contacto .form-container img {
-    width: 20%; }
   .error img {
     width: 15%; } }
 
