@@ -3,7 +3,7 @@ main {
     background: $whitecustom;
     .local {
         padding-top: 5em;
-        background: url(../multimedia/local.jpg) no-repeat center rgb(82, 82, 82);
+        background: url(../multimedia/gral/local.jpg) no-repeat center rgb(82, 82, 82);
         background-blend-mode: multiply;
         background-attachment: scroll;
         background-size: cover;
@@ -80,12 +80,9 @@ main {
                     grid-template-rows: auto auto auto;
                 width: 100%;
                 margin-bottom: 3em;
-                border-radius: 1em;
                 box-shadow: $food-shadow;
                 img {
                     width: 100%;
-                    border-top-left-radius: .8em;
-                    border-top-right-radius: .8em;
                 }
                 p {
                     display: flex;

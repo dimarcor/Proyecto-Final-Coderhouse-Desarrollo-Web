@@ -87,7 +87,7 @@ main {
   background: #f1f1f1; }
   main .local {
     padding-top: 5em;
-    background: url(../multimedia/local.jpg) no-repeat center #525252;
+    background: url(../multimedia/gral/local.jpg) no-repeat center #525252;
     background-blend-mode: multiply;
     background-attachment: scroll;
     background-size: cover;
@@ -152,12 +152,9 @@ main {
       grid-template-rows: auto auto auto;
       width: 100%;
       margin-bottom: 3em;
-      border-radius: 1em;
       box-shadow: 0px 8px 24px 5px rgba(0, 0, 0, 0.45); }
       main .daymenu__img .img img {
-        width: 100%;
-        border-top-left-radius: .8em;
-        border-top-right-radius: .8em; }
+        width: 100%; }
       main .daymenu__img .img p {
         display: flex;
         flex-flow: column;
@@ -208,7 +205,7 @@ footer {
 #carta {
   width: 100%;
   padding: 1em;
-  background: url("../multimedia/patterncarta.png"); }
+  background: url("../multimedia/gral/patterncarta.png"); }
   #carta .carta-info {
     width: 100%;
     padding-top: 4em;
@@ -235,14 +232,11 @@ footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-radius: .8em;
       margin-bottom: 3em;
       background: #fff;
       box-shadow: 0px 8px 24px 5px rgba(0, 0, 0, 0.45); }
       #carta .foods__img img {
-        width: 50%;
-        border-top-left-radius: .8em;
-        border-bottom-left-radius: .8em; }
+        width: 50%; }
       #carta .foods__img .foods__info {
         width: 50%; }
         #carta .foods__img .foods__info p {
@@ -610,8 +604,7 @@ footer a {
     #carta .foods__img {
       display: flex;
       justify-content: space-between;
-      align-items: initial;
-      border-radius: .8em; }
+      align-items: initial; }
       #carta .foods__img img {
         width: 30%; }
       #carta .foods__img .foods__info {
@@ -783,8 +776,7 @@ footer a {
     align-items: center;
     width: 100%;
     margin-bottom: 3em;
-    border: none;
-    border-radius: 1em; }
+    border: none; }
     main .daymenu__img .img:hover {
       transition: all .4s;
       background: #007200;
@@ -798,9 +790,7 @@ footer a {
       color: inherit; }
     main .daymenu__img .img img {
       width: 30%;
-      border: none;
-      border-bottom-left-radius: 1em;
-      border-top-right-radius: 0; }
+      border: none; }
   footer .site-map__nav li a:hover {
     color: #70e000;
     transition: all .3s; }
@@ -833,9 +823,7 @@ footer a {
         transform: scale(1.1);
         transition: .2s; }
       #carta .foods__img img {
-        width: 100%;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0; }
+        width: 100%; }
       #carta .foods__img .foods__info {
         display: flex;
         flex-flow: column;
@@ -866,6 +854,8 @@ footer a {
       transition: background .3s; }
   #promociones .promo-image {
     padding: 0; }
+    #promociones .promo-image img {
+      height: 20em; }
   #promociones .promos {
     display: flex;
     flex-flow: row nowrap;
@@ -939,8 +929,12 @@ footer a {
         margin: 2em; }
   #delivery .soon .title-container h1 {
     font-size: 4.5rem; }
+  #promociones .promo-image img {
+    height: 30em; }
   #promociones h1 {
     font-size: 3.3rem; }
+  #promociones .promos p {
+    font-size: 3rem; }
   #promociones .promos__current {
     width: 30%; }
   #promociones .promos__new {

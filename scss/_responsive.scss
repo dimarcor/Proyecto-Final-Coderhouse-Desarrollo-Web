@@ -207,7 +207,6 @@
                 display: flex;
                     justify-content: space-between;
                     align-items: initial;
-                border-radius: .8em;
                 img {
                     width: 30%;
                 }
@@ -469,7 +468,6 @@
                     width: 100%;
                     margin-bottom: 3em;
                     border:none;
-                    border-radius: 1em;
                     &:hover {
                         transition: all .4s;
                         background: $darkgreen;
@@ -486,8 +484,6 @@
                     img {
                         width: 30%;
                         border: none;
-                        border-bottom-left-radius: 1em;
-                        border-top-right-radius: 0;
                     }
                 }
             }
@@ -551,8 +547,6 @@
                 }
                 img {
                     width: 100%;
-                    border-top-left-radius: 0;
-                    border-bottom-left-radius: 0;
                 }
                 .foods__info {
                     display: flex;
@@ -608,6 +602,9 @@
     #promociones {
         .promo-image {
             padding: 0;
+            img {
+                height: 20em;
+            }
         }
         .promos {
             display: flex;
@@ -763,10 +760,18 @@
     // Promociones
 
     #promociones {
+        .promo-image {
+            img {
+                height: 30em;
+            }
+        }
         h1 {
             font-size: $fsz-big*1.1;
         }
         .promos {
+            p {
+                font-size: $fsz-big;
+            }
             &__current {
                 width: 30%;
             }

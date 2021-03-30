@@ -1,7 +1,7 @@
 #carta {
     width: 100%;
     padding: 1em;
-    background: url('../multimedia/patterncarta.png');
+    background: url('../multimedia/gral/patterncarta.png');
     .carta-info {
         width: 100%;
         padding-top: 4em;
@@ -32,14 +32,11 @@
             display: flex;
                 justify-content: space-between;
                 align-items: center;
-            border-radius: .8em;
             margin-bottom: 3em;
             background: #fff;
             box-shadow: $food-shadow;
             img {
                 width: 50%;
-                border-top-left-radius: .8em;
-                border-bottom-left-radius: .8em;
             }
             .foods__info {
                 width: 50%;
