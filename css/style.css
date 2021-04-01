@@ -404,8 +404,10 @@ footer {
     #promociones .promos__new .promos__three p {
       color: #f1f1f1; }
 
-footer a {
-  text-decoration: none; }
+.footer-promo ul {
+  padding: 0; }
+  .footer-promo ul a {
+    text-decoration: none; }
 
 #contacto .form-container {
   display: flex;
