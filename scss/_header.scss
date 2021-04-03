@@ -53,14 +53,18 @@ header {
             height: 0vh;
             top: 64px;
             margin-bottom: 0;
+            padding-left: 0;
             background: $lightblack;
             text-align: center;
             transition: all .5s;
             &__item {
                 visibility: hidden;
                 line-height: 1.8rem;
-                margin: 3em 0;
+                margin: 2em 0;
                 a {
+                    display: inline-block;
+                    width: 100%;
+                    padding: 1em;
                     color: $whitecustom;
                     font-size: $fsz-small*1.2;
                     text-transform: uppercase;

@@ -144,7 +144,7 @@
                 align-items: center;
             width: 100%;
             margin-bottom: 2em;
-            h5 {
+            h3 {
                 margin-bottom: 1em;
                 font-size: $fsz;
                 color: $lightgreen;
@@ -410,6 +410,9 @@
                     margin: 0 20px;
                     transition: none;
                     a {
+                        display: inline;
+                        width: auto;
+                        padding: 0;
                         font-size: $fsz-small;
                         &:hover {
                             color: $lightgreen;
@@ -705,7 +708,7 @@
     footer {
         font-size: $fsz-small*1.4;
         .info {
-            h5 {
+            h3 {
                 font-size: $fsz;
             }
         }

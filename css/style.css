@@ -64,14 +64,18 @@ header {
       height: 0vh;
       top: 64px;
       margin-bottom: 0;
+      padding-left: 0;
       background: #111111;
       text-align: center;
       transition: all .5s; }
       header nav .nav-list__item {
         visibility: hidden;
         line-height: 1.8rem;
-        margin: 3em 0; }
+        margin: 2em 0; }
         header nav .nav-list__item a {
+          display: inline-block;
+          width: 100%;
+          padding: 1em;
           color: #f1f1f1;
           font-size: 1.2rem;
           text-transform: uppercase;
@@ -172,7 +176,7 @@ footer {
   padding: 1em;
   text-align: center;
   background: #111111; }
-  footer .info h5 {
+  footer .info h3 {
     margin-bottom: 1em;
     font-size: 1rem;
     color: #70e000; }
@@ -568,7 +572,7 @@ footer {
       align-items: center;
       width: 100%;
       margin-bottom: 2em; }
-      footer .info h5 {
+      footer .info h3 {
         margin-bottom: 1em;
         font-size: 2rem;
         color: #70e000; }
@@ -745,6 +749,9 @@ footer {
           margin: 0 20px;
           transition: none; }
           header nav .nav-list__item a {
+            display: inline;
+            width: auto;
+            padding: 0;
             font-size: 1rem; }
             header nav .nav-list__item a:hover {
               color: #70e000;
@@ -906,7 +913,7 @@ footer {
     width: 70%; }
   footer {
     font-size: 1.4rem; }
-    footer .info h5 {
+    footer .info h3 {
       font-size: 2rem; }
   #carta {
     width: 100%;
