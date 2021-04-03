@@ -495,7 +495,7 @@ footer {
       border-radius: 1em;
       background: #70e000;
       color: #000; }
-  .error svg {
+  .error img {
     width: 50%; }
 
 @media only screen and (min-width: 425px) {
@@ -717,7 +717,7 @@ footer {
     #contacto .form-container embed {
       width: 25%;
       height: 25%; }
-  .error svg {
+  .error img {
     width: 25%; } }
 
 @media only screen and (min-width: 900px) {
@@ -958,7 +958,7 @@ footer {
     font-size: 1.3rem; }
   #contacto .form-container .form-container__form select {
     font-size: 1.3rem; }
-  .error svg {
+  .error img {
     width: 15%; } }
 
 @media only screen and (min-width: 1280px) {
