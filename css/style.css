@@ -408,10 +408,14 @@ footer {
     #promociones .promos__new .promos__three p {
       color: #f1f1f1; }
 
-.footer-promo ul {
+.footer-promo .info h3 {
+  font-weight: bold; }
+
+.footer-promo .info ul {
   padding: 0; }
-  .footer-promo ul a {
-    text-decoration: none; }
+
+.footer-promo .info a {
+  text-decoration: none; }
 
 #contacto .form-container {
   display: flex;
@@ -765,6 +769,7 @@ footer {
           color: #000;
           font-size: 1.2rem;
           font-weight: 700;
+          line-height: 1.2;
           background-color: #70e000;
           border-radius: 1em; }
           header nav .btn-container__btn:hover {

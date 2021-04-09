@@ -92,8 +92,13 @@
     }
 
 .footer-promo {
+    .info {
+        h3 {
+            font-weight: bold;
+        }
     ul {
         padding: 0;
+        }
         a {
             text-decoration: none;
         }
