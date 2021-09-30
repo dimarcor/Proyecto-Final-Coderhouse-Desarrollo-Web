@@ -77,7 +77,7 @@ header {
           width: 100%;
           padding: 1em;
           color: #f1f1f1;
-          font-size: 1.2rem;
+          font-size: 0.96rem;
           text-transform: uppercase;
           text-decoration: none; }
     header nav .btn-container {
@@ -109,7 +109,7 @@ main {
         display: flex;
         flex-flow: column;
         margin-bottom: .4em;
-        font-size: 3rem;
+        font-size: 2.5rem;
         line-height: 1em;
         color: #70e000; }
       main .local__info p {
@@ -144,7 +144,7 @@ main {
         font-size: 2rem; }
       main .daymenu__info p {
         margin-bottom: 2em;
-        font-size: 0.95238rem;
+        font-size: 0.7619rem;
         font-weight: 500;
         text-align: center; }
         main .daymenu__info p span {
@@ -165,7 +165,7 @@ main {
         padding: 1em 0;
         text-align: center;
         font-weight: 500;
-        font-size: 1.2rem;
+        font-size: 0.96rem;
         color: #000; }
 
 footer {
@@ -178,11 +178,11 @@ footer {
   background: #111111; }
   footer .info h3 {
     margin-bottom: 1em;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #70e000; }
   footer .info p {
     margin-bottom: 1em;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #f1f1f1; }
   footer .site-map {
     width: 100%;
@@ -219,7 +219,7 @@ footer {
       font-size: 2.2rem;
       margin-bottom: .2em; }
     #carta .carta-info p {
-      font-size: 1rem;
+      font-size: 0.8rem;
       font-weight: 500; }
   #carta h2 {
     margin-bottom: 1em;
@@ -246,7 +246,7 @@ footer {
         #carta .foods__img .foods__info p {
           margin-bottom: .5em;
           padding: 0 .1em;
-          font-size: 1.2rem;
+          font-size: 0.96rem;
           font-weight: 500;
           text-align: center;
           line-height: 1.1em; }
@@ -260,7 +260,7 @@ footer {
     margin-bottom: 3em;
     text-align: center;
     font-weight: 500;
-    font-size: 1.1rem; }
+    font-size: 0.88rem; }
 
 #delivery {
   width: 100%;
@@ -284,7 +284,7 @@ footer {
     width: 100%; }
     #delivery .now p {
       text-align: center;
-      font-size: 1.6rem;
+      font-size: 1.28rem;
       color: #111111; }
     #delivery .now__phones a {
       display: flex;
@@ -295,7 +295,7 @@ footer {
       background-color: #007200;
       color: #f1f1f1;
       border-radius: 1em;
-      font-size: 1rem; }
+      font-size: 0.8rem; }
       #delivery .now__phones a img {
         width: 2.5em;
         height: 2.5em; }
@@ -305,7 +305,7 @@ footer {
       justify-content: space-between;
       padding: .7em 1em;
       margin: 1em 0;
-      font-size: 1rem;
+      font-size: 0.8rem;
       font-weight: 600;
       background-color: #70e000;
       color: #000;
@@ -332,7 +332,7 @@ footer {
         width: 2em;
         height: 2em; }
       #delivery .business-hours__title h2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         text-align: center;
         margin-bottom: .5em; }
     #delivery .business-hours p {
@@ -364,7 +364,7 @@ footer {
     margin: 0 auto; }
     #promociones .promos p {
       margin-top: .7em;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: 700;
       color: #007200;
       text-align: center; }
@@ -379,7 +379,7 @@ footer {
         padding: 0; }
         #promociones .promos__current .promos__one ul li {
           margin-bottom: 1em;
-          font-size: 1rem;
+          font-size: 0.8rem;
           font-weight: 600;
           text-align: center; }
           #promociones .promos__current .promos__one ul li span {
@@ -393,7 +393,7 @@ footer {
         margin: 1em 0;
         padding-bottom: 1em;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         border-bottom: 2px solid #ccc; }
     #promociones .promos__new .promos__three h3 {
       position: relative;
@@ -449,7 +449,7 @@ footer {
       border: none;
       border-bottom: 1px solid #70e000;
       text-align: left;
-      font-size: 0.90909rem; }
+      font-size: 0.72727rem; }
     #contacto .form-container .form-container__form select {
       padding: .5em;
       background: none;
@@ -463,7 +463,7 @@ footer {
     #contacto .form-container .form-container__form input[type="submit"] {
       width: 50%;
       padding: .7em 1em;
-      font-size: 1.2rem;
+      font-size: 0.96rem;
       font-weight: 600;
       text-transform: uppercase;
       background: #70e000;
@@ -504,23 +504,23 @@ footer {
 
 @media only screen and (min-width: 425px) {
   main .local__info h1 {
-    font-size: 3.45rem; }
+    font-size: 2.875rem; }
   #carta .carta-info h1 {
-    font-size: 3rem; }
+    font-size: 2.5rem; }
   #delivery .soon h1 {
-    font-size: 2.72727rem; }
+    font-size: 2.27273rem; }
   #delivery .now {
     width: 80%;
     margin: 0 auto; }
     #delivery .now__phones a {
-      font-size: 1rem; }
+      font-size: 0.8rem; }
     #delivery .now__phones p img {
       width: 2em;
       height: 2em; }
   #delivery .business-hours {
     padding: 1em; }
     #delivery .business-hours p {
-      font-size: 1.2rem; }
+      font-size: 0.96rem; }
     #delivery .business-hours__title {
       width: 90%;
       display: flex;
@@ -531,40 +531,40 @@ footer {
         width: 2.2em;
         height: 2.2em; }
       #delivery .business-hours__title h2 {
-        font-size: 1.6rem; }
+        font-size: 1.28rem; }
   #promociones .promos {
     width: 60%; }
     #promociones .promos article {
       margin-bottom: 2em; }
     #promociones .promos p {
       margin-top: .6em;
-      font-size: 1.8rem; }
+      font-size: 1.44rem; }
     #promociones .promos__current .promos__one ul li {
-      font-size: 1.2rem; } }
+      font-size: 0.96rem; } }
 
 @media only screen and (min-width: 768px) {
   main .local__info h1 {
     display: block;
-    font-size: 4.5rem; }
+    font-size: 2.5rem; }
   main .local__info p {
-    font-size: 1.7rem; }
+    font-size: 1.2rem; }
   main .local__wpp {
-    width: 40%; }
+    width: 35%; }
     main .local__wpp a {
-      font-size: 1.2rem; }
+      font-size: 0.96rem; }
   main .daymenu {
     width: 90%;
     margin: 0 auto; }
     main .daymenu__info h2 {
-      font-size: 3rem; }
+      font-size: 2.5rem; }
     main .daymenu__info p {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: 400; }
     main .daymenu__img {
       margin: 0 auto;
       width: 60%; }
       main .daymenu__img .img p {
-        font-size: 1.7rem;
+        font-size: 1.36rem;
         font-weight: 400; }
   footer {
     width: 100%;
@@ -582,25 +582,25 @@ footer {
         color: #70e000; }
       footer .info p {
         margin-bottom: 1em;
-        font-size: 1.3rem;
+        font-size: 1.04rem;
         color: #f1f1f1; }
         footer .info p:last-of-type {
           margin: 0; }
     footer .site-map {
       margin-bottom: 2em; }
       footer .site-map__nav li a {
-        font-size: 1.5rem; }
+        font-size: 1.2rem; }
   #carta h2 {
     text-align: center;
-    font-size: 3.6rem; }
+    font-size: 3rem; }
   #carta .carta-info {
     width: 65%;
     margin: 0 auto; }
     #carta .carta-info h1 {
-      font-size: 3.9rem; }
+      font-size: 3.25rem; }
     #carta .carta-info p {
       margin-bottom: 3em;
-      font-size: 1.4rem;
+      font-size: 1.12rem;
       font-weight: 300; }
   #carta .specials-container {
     width: 65%;
@@ -608,7 +608,7 @@ footer {
     #carta .specials-container .special {
       margin-top: -1.3em;
       font-weight: 300;
-      font-size: 1.5rem; }
+      font-size: 1.2rem; }
   #carta .foods {
     display: flex;
     flex-flow: row wrap;
@@ -628,7 +628,7 @@ footer {
         align-items: center;
         padding: 1em; }
         #carta .foods__img .foods__info p {
-          font-size: 1.5rem;
+          font-size: 1.2rem;
           font-weight: 600;
           line-height: 1.3em;
           text-align: left; }
@@ -648,7 +648,7 @@ footer {
     #delivery .soon h1 {
       margin: 0;
       text-align: left;
-      font-size: 3rem;
+      font-size: 2.5rem;
       display: flex;
       flex-flow: column; }
     #delivery .soon img {
@@ -667,9 +667,9 @@ footer {
       padding: 0; }
       #delivery .now__phones a {
         text-align: right;
-        font-size: 1rem; }
+        font-size: 0.8rem; }
       #delivery .now__phones img {
-        font-size: 1rem; }
+        font-size: 0.8rem; }
       #delivery .now__phones p {
         margin-bottom: 0; }
   #delivery .business-hours {
@@ -692,7 +692,7 @@ footer {
   #promociones .promo-image img {
     height: 30vh; }
   #promociones h1 {
-    font-size: 3rem; }
+    font-size: 2.5rem; }
   #promociones .promos {
     display: flex;
     flex-flow: row wrap;
@@ -712,9 +712,9 @@ footer {
       width: 100%;
       margin-bottom: 2em; }
       #contacto .form-container .form-container__title h1 {
-        font-size: 3rem; }
+        font-size: 2.5rem; }
       #contacto .form-container .form-container__title p {
-        font-size: 1.2rem;
+        font-size: 0.96rem;
         font-weight: 300; }
     #contacto .form-container .form-container__form {
       width: 50%; }
@@ -756,7 +756,7 @@ footer {
             display: inline;
             width: auto;
             padding: 0;
-            font-size: 1rem; }
+            font-size: 0.8rem; }
             header nav .nav-list__item a:hover {
               color: #70e000;
               transition: .3s; }
@@ -779,49 +779,57 @@ footer {
   .scroll {
     box-shadow: 0px -32px 39px 46px rgba(0, 0, 0, 0.52);
     background: #111111; }
+  main .local__info {
+    width: 60%; }
+    main .local__info h1 {
+      font-size: 3.75rem; }
+    main .local__info p {
+      font-size: 2rem; }
   main .local__wpp a {
-    font-size: 1.4rem; }
+    font-size: 1.12rem; }
   main .local__wpp a:hover {
     transform: scale(1.2);
     transition: .5s; }
-  main .daymenu__img .img {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 3em;
-    border: none; }
-    main .daymenu__img .img:hover {
-      transition: all .4s;
-      background: #007200;
-      color: #f1f1f1; }
-    main .daymenu__img .img p {
-      width: 70%;
-      padding: 0;
-      text-align: center;
-      font-weight: 500;
-      font-size: 1.7rem;
-      color: inherit; }
-    main .daymenu__img .img img {
-      width: 30%;
+  main .daymenu {
+    width: 70%; }
+    main .daymenu__img .img {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 3em;
       border: none; }
+      main .daymenu__img .img:hover {
+        transition: all .4s;
+        background: #007200;
+        color: #f1f1f1; }
+      main .daymenu__img .img p {
+        width: 70%;
+        padding: 0;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.36rem;
+        color: inherit; }
+      main .daymenu__img .img img {
+        width: 30%;
+        border: none; }
   footer .site-map__nav li a:hover {
     color: #70e000;
     transition: all .3s; }
   footer .social a i {
-    font-size: 3rem; }
+    font-size: 2.5rem; }
   footer .social a:hover {
     animation-name: red_social;
     animation-duration: 1.5s; }
   #carta h2 {
-    font-size: 3rem; }
+    font-size: 2.5rem; }
   #carta .carta-info {
     padding-top: 5.5em; }
     #carta .carta-info h1 {
-      font-size: 3.3rem; }
+      font-size: 2.75rem; }
     #carta .carta-info p {
-      font-size: 1.3rem;
+      font-size: 1.04rem;
       font-weight: 400; }
   #carta .foods {
     display: flex;
@@ -847,7 +855,7 @@ footer {
         #carta .foods__img .foods__info p {
           margin-bottom: .5em;
           padding: 0 .1em;
-          font-size: 1.8rem;
+          font-size: 1.44rem;
           font-weight: 600;
           line-height: 1.1em;
           text-align: center; }
@@ -861,7 +869,7 @@ footer {
     margin-bottom: 3em;
     text-align: center;
     font-weight: 400;
-    font-size: 1.7rem; }
+    font-size: 1.36rem; }
   #delivery .now__phones a {
     transform: none; }
     #delivery .now__phones a:active {
@@ -881,7 +889,7 @@ footer {
       width: 30%;
       margin-right: 2em; }
       #promociones .promos__current .promos__one ul li {
-        font-size: 1.35rem; }
+        font-size: 1.08rem; }
       #promociones .promos__current .promos__two img {
         height: 12em; }
     #promociones .promos__current:hover {
@@ -904,20 +912,18 @@ footer {
 @media only screen and (min-width: 1024px) {
   header nav .nav-list li a {
     font-size: 1.2rem; }
-  main .local__info p {
-    font-size: 2rem; }
   main .local__wpp {
     margin: 0 auto; }
     main .local__wpp a {
-      font-size: 1.6rem; }
+      font-size: 1.28rem; }
   main .daymenu__info h2 {
-    font-size: 3.75rem; }
+    font-size: 3.125rem; }
   main .daymenu__info p {
-    font-size: 1.5rem; }
+    font-size: 1.2rem; }
   main .daymenu__img {
     width: 70%; }
   footer {
-    font-size: 1.4rem; }
+    font-size: 1.12rem; }
     footer .info h3 {
       font-size: 2rem; }
   #carta {
@@ -926,43 +932,47 @@ footer {
     #carta h2 {
       margin: 1em 0;
       text-align: center;
-      font-size: 3rem; }
+      font-size: 2.5rem; }
     #carta .carta-info {
       width: 100%;
       padding-top: 7em;
       margin-bottom: 2em;
       text-align: center; }
       #carta .carta-info h1 {
-        font-size: 3.9rem;
+        font-size: 3.25rem;
         margin-bottom: .2em; }
       #carta .carta-info p {
-        font-size: 1.6rem;
+        font-size: 1.28rem;
         font-weight: 400; }
     #carta .foods {
       width: 80%; }
       #carta .foods__img {
         margin: 2em; }
-  #delivery .soon .title-container h1 {
-    font-size: 4.5rem; }
+  #delivery .soon {
+    width: 70%; }
+    #delivery .soon .title-container h1 {
+      font-size: 3.75rem; }
   #promociones .promo-image img {
-    height: 30em; }
+    height: 20em; }
   #promociones h1 {
-    font-size: 3.3rem; }
+    font-size: 2.75rem; }
   #promociones .promos p {
-    font-size: 3rem; }
+    font-size: 2.5rem; }
   #promociones .promos__current {
     width: 30%; }
   #promociones .promos__new {
     width: 29%; }
     #promociones .promos__new .promos__three h3 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin-bottom: 0; }
-  #contacto .form-container .form-container__form input[type="text"],
-  #contacto .form-container .form-container__form input[type="mail"],
-  #contacto .form-container .form-container__form textarea {
-    font-size: 1.3rem; }
-  #contacto .form-container .form-container__form select {
-    font-size: 1.3rem; }
+  #contacto .form-container {
+    width: 70%; }
+    #contacto .form-container .form-container__form input[type="text"],
+    #contacto .form-container .form-container__form input[type="mail"],
+    #contacto .form-container .form-container__form textarea {
+      font-size: 1.04rem; }
+    #contacto .form-container .form-container__form select {
+      font-size: 1.04rem; }
   .error img {
     width: 15%; } }
 
@@ -971,14 +981,14 @@ footer {
     width: 32%; }
   #carta h2 {
     text-align: center;
-    font-size: 3rem; }
+    font-size: 2.5rem; }
   #carta .carta-info {
     width: 90%;
     padding-top: 5em; }
     #carta .carta-info h1 {
-      font-size: 3.75rem; }
+      font-size: 3.125rem; }
     #carta .carta-info p {
-      font-size: 1.6rem;
+      font-size: 1.28rem;
       font-weight: 300; }
   #carta .foods {
     display: flex;
@@ -990,14 +1000,14 @@ footer {
       #carta .foods__img .foods__info p {
         margin-bottom: .5em;
         padding: 0 .1em;
-        font-size: 2rem;
+        font-size: 1.2rem;
         font-weight: 500;
         text-align: center;
         line-height: 1.1em; }
       #carta .foods__img .foods__info .price {
         margin: none;
         padding: none;
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 700;
         color: #007200; }
   #carta .specials-container .special {
@@ -1005,12 +1015,14 @@ footer {
     margin-bottom: 3em;
     text-align: center;
     font-weight: 400;
-    font-size: 1.7rem; }
+    font-size: 1.36rem; }
   #promociones h1 {
-    text-align: left;
     padding-left: 2em;
-    font-size: 4.5rem; }
-  #promociones .promos__current .promos__one ul li {
-    font-size: 1.7rem; }
-  #promociones .promos__current .promos__two img {
-    height: 18em; } }
+    font-size: 3.75rem; }
+  #promociones .promos {
+    width: 70%;
+    margin: 0 auto; }
+    #promociones .promos__current .promos__one ul li {
+      font-size: 1.36rem; }
+    #promociones .promos__current .promos__two img {
+      height: 18em; } }

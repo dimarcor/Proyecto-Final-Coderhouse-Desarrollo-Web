@@ -96,14 +96,14 @@
             &__info {
                 h1 {
                     display: block;
-                    font-size: $fsz-big*1.5;
+                    font-size: $fsz-big;
                 }
                 p {
-                    font-size: $fsz-small*1.7;
+                    font-size: $fsz-small*1.5;
                 }
             }
             &__wpp {
-                width: 40%;
+                width: 35%;
                 a {
                     font-size: $fsz-small*1.2;
                 }
@@ -428,7 +428,7 @@
                     display: flex;
                     padding: .7em 1em;
                     color: #000;
-                    font-size: $fsz-small*1.2;
+                    font-size: $fsz-small*1.5;
                     font-weight: 700;
                     line-height: 1.2;
                     background-color: $lightgreen;
@@ -450,6 +450,15 @@
 
     main {
         .local {
+            &__info {
+                width: 60%;
+                h1 {
+                    font-size: $fsz-big*1.5;
+                }
+                p {
+                    font-size: $fsz;
+                }
+            }
             &__wpp {
                 a {
                     font-size: $fsz-small*1.4;
@@ -461,6 +470,7 @@
             }
         }
         .daymenu {
+            width: 70%;
             &__img {
                 .img {
                     display: flex;
@@ -670,7 +680,7 @@
             .nav-list {
                 li {
                     a {
-                        font-size: $fsz-small*1.2;
+                        font-size: $fsz-small*1.5;
                     }
                 }
             } 
@@ -679,11 +689,6 @@
     
     main {
         .local {
-            &__info {
-                p {
-                    font-size: $fsz;
-                }
-            }
             &__wpp {
                 margin: 0 auto;
                 a {
@@ -751,6 +756,7 @@
 
     #delivery {
         .soon {
+            width: 70%;
             .title-container {
                 h1 {
                     font-size: $fsz-big*1.5;
@@ -764,7 +770,7 @@
     #promociones {
         .promo-image {
             img {
-                height: 30em;
+                height: 20em;
             }
         }
         h1 {
@@ -793,6 +799,7 @@
 
     #contacto {
         .form-container {
+            width: 70%;
             .form-container__form {
                 input[type="text"],
                 input[type="mail"],
@@ -854,7 +861,7 @@
                     p {
                         margin-bottom: .5em;
                         padding: 0 .1em;
-                        font-size: $fsz;
+                        font-size: $fsz-small*1.5;
                         font-weight: 500;
                         text-align: center;
                         line-height: 1.1em;
@@ -862,7 +869,7 @@
                     .price {
                         margin: none;
                         padding: none;
-                        font-size: $fsz-big;
+                        font-size: $fsz;
                         font-weight: 700;
                         color: $darkgreen
                     }
@@ -884,11 +891,12 @@
 
     #promociones {
         h1 {
-            text-align: left;
             padding-left: 2em;
             font-size: $fsz-big*1.5;
         }
         .promos {
+            width: 70%;
+            margin: 0 auto;
             &__current {
                 .promos__one {
                     ul {

@@ -20,6 +20,6 @@
   "homepage": "https://github.com/dimarcor/Proyecto-Final-Coderhouse-Desarrollo-Web#readme",
   "devDependencies": {
     "node-sass": "^5.0.0",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.13"
   }
 }
